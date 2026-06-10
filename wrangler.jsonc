@@ -1,0 +1,8 @@
+﻿{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "bitter-bonus-e8b6",
+  "compatibility_date": "2026-06-10",
+  "assets": {
+    "directory": "./out"
+  }
+}
