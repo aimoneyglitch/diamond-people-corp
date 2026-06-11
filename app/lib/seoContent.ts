@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     slug: "homeschool-scholarships-arizona-donations",
     title: "Homeschool Scholarships in Arizona: How Donations Can Help Families Learn",
     description:
-      "A clear guide for donors and families on how scholarship-style support can help Arizona homeschool students access learning supplies, enrichment, field trips, and educational opportunities.",
+      "A clear guide for donors and families on how student support can help Arizona homeschool students access learning supplies, enrichment, field trips, and educational opportunities.",
     keyword: "homeschool scholarships Arizona",
     readTime: "6 min read",
     imageFile: "public/blog/homeschool-scholarships-arizona-donations.jpg",
@@ -155,7 +155,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why Scholarship Support Matters",
         paragraphs: [
-          "Scholarship-style support can help families access educational opportunities that would otherwise be difficult to afford. For homeschool families, that support may be used for enrichment, field trips, learning supplies, tutoring, student activities, or program participation.",
+          "Student support can help families access educational opportunities that would otherwise be difficult to afford. For homeschool families, that support may be used for enrichment, field trips, learning supplies, tutoring, student activities, or program participation.",
           "The purpose is not to replace a family's commitment. It is to help remove barriers that block students from participating in meaningful learning experiences."
         ]
       },
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "How Donations Can Fund Student Opportunity",
         paragraphs: [
-          "Donations can be pooled into programs, sponsorships, or scholarship-style support that helps students participate in learning experiences. A strong donation program should be clear, transparent, and focused on educational impact.",
+          "Donations can be pooled into programs, sponsorships, or student support that helps students participate in learning experiences. A strong donation program should be clear, transparent, and focused on educational impact.",
           "That is why The Diamond People Corp positions donations around student access, homeschool family support, and community-based educational enrichment."
         ]
       },
@@ -191,7 +191,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Are homeschool scholarships only for tuition?",
         answer:
-          "No. Scholarship-style support may also help with enrichment, supplies, tutoring, field trips, student activities, and learning opportunities depending on the program."
+          "No. Student support may also help with enrichment, supplies, tutoring, field trips, student activities, and learning opportunities depending on the program."
       },
       {
         question: "Why is this important for Arizona homeschool families?",
@@ -214,8 +214,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Donors Deserve a Clear Impact Path",
         paragraphs: [
-          "People are more likely to give when they understand what their donation supports. A strong education nonprofit should make the impact easy to understand.",
-          "For The Diamond People Corp, the impact path is focused on helping homeschool families and K-12 students access educational enrichment, field trips, supplies, youth sports, student activities, and scholarship-style assistance."
+          "People are more likely to give when they understand what their donation supports. Donors deserve a clear view of what their support can help provide.",
+          "For The Diamond People Corp, the impact path is focused on helping homeschool families and students access educational enrichment, field trips, supplies, youth sports, student activities, and student support."
         ]
       },
       {
@@ -242,7 +242,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Turning Donations Into Student Access",
         paragraphs: [
-          "The goal is not just to collect donations. The goal is to convert generosity into access, support, and opportunity for students and families."
+          "The goal is to turn generosity into access, resources, and opportunity. The goal is to convert generosity into access, support, and opportunity for students and families."
         ]
       }
     ],
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Why should donors care about ESA-related homeschool searches?",
         answer:
-          "Families searching ESA and homeschool support are often looking for practical education help. That makes it an important content lane for a nonprofit serving homeschool families."
+          "Families searching ESA and homeschool support are often looking for practical education help. That makes clear guidance valuable for families, donors, and community partners."
       }
     ]
   }

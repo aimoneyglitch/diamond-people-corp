@@ -92,7 +92,7 @@ export default function Home() {
 
           <div className={`${styles.homeHeroMissionCard} ${styles.homeHeroIntroCard}`}>
             <p className={styles.eyebrow}>Tucson, Arizona Education Support</p>
-            <h1>Helping Students Access More Than the Basics</h1>
+            <h1>Helping Students Access Meaningful Educational Opportunity</h1>
             <p className={styles.lead}>
               The Diamond People Corp supports Traveling Scholars Foundation families by helping remove
               barriers to meaningful learning experiences, enrichment opportunities, field experiences,
@@ -146,8 +146,8 @@ export default function Home() {
               <p className={styles.eyebrow}>Partners</p>
               <h2>Built for donors, sponsors, churches, businesses, foundations, and community partners.</h2>
               <p>
-                High-trust giving starts with clarity. The Diamond People Corp is preparing a clean
-                donor path for supporters who want to help students access more than the basics.
+                Serious support starts with a clear mission. The Diamond People Corp is preparing a clean
+                support path for donors and partners who want to help students access meaningful educational opportunity.
               </p>
               <div className={styles.actions}>
                 <Link className={styles.primaryButton} href="/donation-inquiries">Start a Giving Inquiry</Link>
@@ -179,7 +179,7 @@ export default function Home() {
                 info@thediamondpeoplecorp.org
               </Link>
               <Link className={styles.secondaryButton} href="/donation-inquiries">
-                Donation Inquiries
+                Support Inquiries
               </Link>
             </div>
           </div>

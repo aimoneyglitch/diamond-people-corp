@@ -102,7 +102,7 @@ export default function DonatePage() {
               <article>
                 <span>03</span>
                 <h3>Move with clarity</h3>
-                <p>Donors and partners get a more intentional path than a generic email button.</p>
+                <p>Supporters receive a clear starting point for meaningful giving and partnership conversations.</p>
               </article>
             </div>
           </div>
@@ -130,14 +130,14 @@ export default function DonatePage() {
               <p className={styles.eyebrow}>Digital Giving</p>
               <h2>A secure online giving option is the next step.</h2>
               <p>
-                The site is being prepared for a dedicated giving page connected to a trusted
-                donation platform. Bank information should stay inside the payment provider,
-                not inside the website code.
+                A secure giving page will connect supporters with an approved
+                giving platform once the final donation link is ready.
+                
               </p>
             </div>
 
             <div className={styles.splitPanel}>
-              <h3>Current status</h3>
+              <h3>Support Path</h3>
               <p>
                 Larger gifts, sponsorships, grants, and partnership conversations can begin through
                 direct inquiry while the secure donation system is finalized.

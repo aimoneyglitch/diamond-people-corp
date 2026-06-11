@@ -56,7 +56,7 @@ export default function StudentEnrichmentFundPage() {
           <p className={styles.lead}>
             The Student Enrichment Fund exists to help students access the opportunities that make education
             more complete: real-world learning, enrichment activities, supplies, sports, travel, tutoring,
-            and scholarship-style assistance.
+            and student support.
           </p>
           <div className={styles.actions}>
             <Link className={styles.primaryButton} href="/donate">Support the Fund</Link>
@@ -91,7 +91,7 @@ export default function StudentEnrichmentFundPage() {
             <p className={styles.eyebrow}>Student Enrichment</p>
             <h2>Growth happens through experience, activity, and the right resources.</h2>
             <p>
-              A premium donor page should show the full range of enrichment: real-world learning,
+              Student enrichment includes real-world learning,
               confidence-building activities, and the materials students need to participate fully.
             </p>
           </div>

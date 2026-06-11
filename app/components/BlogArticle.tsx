@@ -46,11 +46,11 @@ export function BlogArticle({ slug }: { slug: string }) {
 
           <div className={styles.articleBody}>
             <div className={styles.articleCallout}>
-              <h2>Donation Impact Summary</h2>
+              <h2>Article Focus</h2>
               <p>
                 This guide helps donors, partners, and families understand how community support can
                 help students access learning supplies, enrichment, field trips, tutoring, youth sports,
-                student activities, and scholarship-style assistance.
+                student activities, and student support.
               </p>
             </div>
 
@@ -82,11 +82,11 @@ export function BlogArticle({ slug }: { slug: string }) {
             </section>
 
             <section>
-              <h2>Support Homeschool Families Through The Diamond People Corp</h2>
+              <h2>Continue Exploring Student Support</h2>
               <p>
-                Help The Diamond People Corp support homeschool families and K-12 students with curriculum,
+                Help The Diamond People Corp support homeschool families and students with curriculum,
                 learning supplies, field trips, enrichment opportunities, youth sports, student activities,
-                and scholarship-style assistance connected to Traveling Scholars Foundation.
+                and student support connected to Traveling Scholars Foundation.
               </p>
               <div className={styles.actions}>
                 <Link className={styles.primaryButton} href="/donate">Donate or Partner With Us</Link>

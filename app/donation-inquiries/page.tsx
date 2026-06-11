@@ -5,7 +5,7 @@ import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } fr
 import { PremiumImage } from "../components/PremiumImages";
 
 export const metadata: Metadata = {
-  title: "Donation Inquiries for Tucson Education Support",
+  title: "Support Inquiries for Tucson Education Support",
   description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
   keywords: [
     "donation inquiry Tucson",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://thediamondpeoplecorp.org/donation-inquiries/",
     siteName: "The Diamond People Corp",
-    title: "Donation Inquiries for Tucson Education Support",
+    title: "Support Inquiries for Tucson Education Support",
     description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Donation Inquiries for Tucson Education Support",
+    title: "Support Inquiries for Tucson Education Support",
     description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
     images: ["/og-diamond-people-corp.jpg"]
   },
@@ -51,18 +51,18 @@ export default function DonationInquiriesPage() {
       <SiteHeader />
       <main>
         <section className={styles.pageHero}>
-          <p className={styles.eyebrow}>Donation Inquiry</p>
+          <p className={styles.eyebrow}>Support Inquiry</p>
           <h1>Start a Donation, Sponsorship, Grant, or Partnership Conversation</h1>
           <p className={styles.lead}>
             The Diamond People Corp connects community support with education-related opportunities
-            for homeschool families and K-12 students connected to Traveling Scholars Foundation.
+            for homeschool families and students connected to Traveling Scholars Foundation.
           </p>
           <div className={styles.actions}>
             <Link
               className={styles.primaryButton}
               href="mailto:info@thediamondpeoplecorp.org?subject=Donation%20Inquiry%20-%20The%20Diamond%20People%20Corp"
             >
-              Email Donation Inquiry
+              Email Support Inquiry
             </Link>
             <Link className={styles.secondaryButton} href="/blog/where-education-donations-go/">
               See Where Support Goes

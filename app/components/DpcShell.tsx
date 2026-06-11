@@ -82,7 +82,7 @@ export function WhereSupportGoesSection() {
     },
     {
       title: "Family Support",
-      text: "Scholarship-style assistance that helps reduce pressure when educational costs become a barrier."
+      text: "Student support that helps reduce pressure when educational costs become a barrier."
     }
   ];
 
@@ -135,7 +135,7 @@ export function DonorTrustSection() {
         </div>
         <div>
           <strong>Responsible language</strong>
-          <p>The site does not make tax-treatment promises without proper confirmation.</p>
+          <p>Supporters receive clear, responsible communication before making giving decisions.</p>
         </div>
       </div>
     </section>
@@ -152,7 +152,7 @@ export function DonationCta() {
       </p>
       <div className={styles.actions}>
         <Link className={styles.primaryButton} href="/donate">Give or Sponsor</Link>
-        <Link className={styles.secondaryButton} href="/donation-inquiries">Donation Inquiries</Link>
+        <Link className={styles.secondaryButton} href="/donation-inquiries">Support Inquiries</Link>
       </div>
     </section>
   );
@@ -164,7 +164,7 @@ export function SiteFooter() {
       <div className={styles.footerCta}>
         <div>
           <p className={styles.eyebrow}>Tucson Education Support</p>
-          <h2>Helping students access more than the basics.</h2>
+          <h2>Helping students access meaningful educational opportunity.</h2>
           <p>
             The Diamond People Corp supports Traveling Scholars Foundation families through
             education, enrichment, and community partnership.
@@ -192,7 +192,7 @@ export function SiteFooter() {
         <div className={styles.footerColumn}>
           <h3>Give</h3>
           <Link href="/donate">Donate</Link>
-          <Link href="/donation-inquiries">Donation Inquiries</Link>
+          <Link href="/donation-inquiries">Support Inquiries</Link>
           <Link href="/support-homeschool-families">Support Families</Link>
           <Link href="/#partners">Partner With Us</Link>
         </div>
@@ -225,7 +225,7 @@ export function SiteFooter() {
           <p>Inquiries are reviewed directly by The Diamond People Corp.</p>
         </div>
         <div className={styles.footerLegalLinks}>
-          <Link href="/donation-inquiries/">Donation Inquiries</Link>
+          <Link href="/donation-inquiries/">Support Inquiries</Link>
           <Link href="/privacy-policy/">Privacy Policy</Link>
           <Link href="/terms/">Terms</Link>
         </div>
