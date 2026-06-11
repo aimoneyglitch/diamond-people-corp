@@ -205,8 +205,15 @@ export function SiteFooter() {
       </div>
 
       <div className={styles.footerBottom}>
-        <p>© The Diamond People Corp. Supporting Traveling Scholars Foundation students and families.</p>
-        <p>Donation and sponsorship inquiries are reviewed directly by The Diamond People Corp.</p>
+        <div>
+          <p>© The Diamond People Corp. Supporting Traveling Scholars Foundation students and families.</p>
+          <p>Donation and sponsorship inquiries are reviewed directly by The Diamond People Corp.</p>
+        </div>
+        <div className={styles.footerLegalLinks}>
+          <Link href="/donation-inquiries/">Donation Inquiries</Link>
+          <Link href="/privacy-policy/">Privacy Policy</Link>
+          <Link href="/terms/">Terms</Link>
+        </div>
       </div>
     </footer>
   );

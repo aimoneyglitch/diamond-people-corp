@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import "./globals.css";
+import { StructuredData } from "./components/StructuredData";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thediamondpeoplecorp.org"),
@@ -76,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <StructuredData />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

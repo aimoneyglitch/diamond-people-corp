@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://thediamondpeople.org/sitemap.xml
+Sitemap: https://thediamondpeoplecorp.org/sitemap.xml
