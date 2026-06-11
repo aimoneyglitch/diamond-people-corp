@@ -1,12 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { BlogArticle } from "../../components/BlogArticle";
-import { blogPosts } from "../../lib/seoContent";
-
-const post = blogPosts.find((item) => item.slug === "arizona-esa-homeschool-support");
 
 export const metadata: Metadata = {
-  title: ${post?.title ?? "Blog"} | The Diamond People Corp,
-  description: post?.description ?? "Education support article from The Diamond People Corp.",
+  title: "Arizona ESA and Homeschool Support | The Diamond People Corp",
+  description: "A parent-friendly and donor-friendly overview of Arizona ESA, homeschool support, and why community donations still matter for enrichment, field trips, supplies, and student opportunities.",
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/blog/arizona-esa-homeschool-support/"
   }

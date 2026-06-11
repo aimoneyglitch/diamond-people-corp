@@ -1,12 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { BlogArticle } from "../../components/BlogArticle";
-import { blogPosts } from "../../lib/seoContent";
-
-const post = blogPosts.find((item) => item.slug === "where-education-donations-go");
 
 export const metadata: Metadata = {
-  title: ${post?.title ?? "Blog"} | The Diamond People Corp,
-  description: post?.description ?? "Education support article from The Diamond People Corp.",
+  title: "Where Education Donations Go | The Diamond People Corp",
+  description: "Donors want to know where their support goes. This guide explains how education donations can help students access supplies, field trips, tutoring, enrichment, and youth activities.",
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/blog/where-education-donations-go/"
   }

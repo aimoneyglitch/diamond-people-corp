@@ -1,12 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { BlogArticle } from "../../components/BlogArticle";
-import { blogPosts } from "../../lib/seoContent";
-
-const post = blogPosts.find((item) => item.slug === "why-homeschool-families-need-educational-donations");
 
 export const metadata: Metadata = {
-  title: ${post?.title ?? "Blog"} | The Diamond People Corp,
-  description: post?.description ?? "Education support article from The Diamond People Corp.",
+  title: "Why Homeschool Families Need Educational Donations | The Diamond People Corp",
+  description: "Homeschool families often carry the cost of curriculum, field trips, enrichment, tutoring, supplies, and student activities. Learn why donor support matters.",
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/blog/why-homeschool-families-need-educational-donations/"
   }
