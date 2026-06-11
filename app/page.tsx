@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./donor.module.css";
-import { HomepageImpactSection, SiteFooter, SiteHeader } from "./components/DpcShell";
+import { SiteFooter, SiteHeader } from "./components/DpcShell";
 
 export const metadata: Metadata = {
   title: "Tucson Education Nonprofit | The Diamond People Corp",
@@ -48,66 +48,74 @@ export const metadata: Metadata = {
   }
 };
 
-function ExecutiveTrustStrip() {
+function EditorialPillars() {
   return (
-    <section className={styles.executiveTrustStrip} aria-label="Mission trust points">
+    <section className={styles.editorialPillars} aria-label="Support focus areas">
       <article>
-        <span className={styles.trustMark}>◆</span>
-        <strong>Student-Centered</strong>
-        <p>Support is focused on educational access, confidence, and student opportunity.</p>
+        <span>01</span>
+        <h3>Learning Access</h3>
+        <p>Helping families access the materials, tools, and support students need to keep moving forward.</p>
       </article>
 
       <article>
-        <span className={styles.trustMark}>◇</span>
-        <strong>Tucson, Arizona</strong>
-        <p>Locally grounded education support connected to Traveling Scholars Foundation families.</p>
+        <span>02</span>
+        <h3>Field Experiences</h3>
+        <p>Opening doors to real-world learning through culture, science, nature, history, and community.</p>
       </article>
 
       <article>
-        <span className={styles.trustMark}>●</span>
-        <strong>Clear Support Path</strong>
-        <p>Built for donors, sponsors, businesses, churches, foundations, and partners.</p>
-      </article>
-
-      <article>
-        <span className={styles.trustMark}>✦</span>
-        <strong>Meaningful Access</strong>
-        <p>Helping students participate in enrichment, resources, and real-world learning.</p>
+        <span>03</span>
+        <h3>Student Enrichment</h3>
+        <p>Supporting activities and programs that build confidence, direction, and participation.</p>
       </article>
     </section>
   );
 }
 
-function ExecutiveSupportAreas() {
+function ImpactGallery() {
+  const items = [
+    {
+      src: "/site-images/homeschool-family-support-tucson.jpg",
+      alt: "Tucson homeschool family receiving educational support at home",
+      label: "Family Support"
+    },
+    {
+      src: "/site-images/student-field-trip-learning-tucson.jpg",
+      alt: "Students participating in a field experience in Tucson Arizona",
+      label: "Field Learning"
+    },
+    {
+      src: "/site-images/youth-sports-student-enrichment.jpg",
+      alt: "Student participating in youth enrichment activity with support",
+      label: "Enrichment"
+    }
+  ];
+
   return (
-    <section className={styles.executiveSupportAreas}>
-      <div className={styles.executiveSectionHeader}>
-        <p className={styles.eyebrow}>Support Focus</p>
-        <h2>Generosity becomes access, resources, and experience.</h2>
+    <section className={styles.editorialGallery}>
+      <div className={styles.editorialSectionHeader}>
+        <p className={styles.eyebrow}>Visible Impact</p>
+        <h2>Support should feel real before anyone gives.</h2>
         <p>
-          The Diamond People Corp connects community support with practical needs that help
-          students and families continue building strong education paths.
+          Donors need to see the human side and the practical outcome: families supported,
+          students equipped, and opportunities made possible.
         </p>
       </div>
 
-      <div className={styles.executiveAreaGrid}>
-        <article>
-          <span>01</span>
-          <h3>Learning Resources</h3>
-          <p>Books, supplies, project materials, and tools that help students stay engaged.</p>
-        </article>
-
-        <article>
-          <span>02</span>
-          <h3>Field Experiences</h3>
-          <p>Real-world learning connected to science, culture, history, nature, and community.</p>
-        </article>
-
-        <article>
-          <span>03</span>
-          <h3>Student Enrichment</h3>
-          <p>Activities, tutoring, workshops, and programs that build confidence and direction.</p>
-        </article>
+      <div className={styles.editorialGalleryGrid}>
+        {items.map((item) => (
+          <figure key={item.label} className={styles.editorialPhotoCard}>
+            <Image
+              src={item.src}
+              alt={item.alt}
+              width={1200}
+              height={900}
+              className={styles.editorialPhoto}
+              sizes="(max-width: 900px) 100vw, 33vw"
+            />
+            <figcaption>{item.label}</figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   );
@@ -119,129 +127,135 @@ export default function Home() {
       <SiteHeader />
 
       <main>
-        <section className={styles.executiveHero}>
-          <div className={styles.executiveHeroCopy}>
-            <p className={styles.executiveKicker}>Tucson, Arizona Education Support</p>
-            <h1>Opening Educational Doors for Students and Families</h1>
-            <p className={styles.executiveLead}>
+        <section className={styles.editorialHero}>
+          <div className={styles.editorialHeroCopy}>
+            <p className={styles.editorialKicker}>Tucson Education Support</p>
+
+            <h1>Helping students access the opportunities that shape confidence.</h1>
+
+            <p className={styles.editorialLead}>
               The Diamond People Corp supports Traveling Scholars Foundation families by helping
-              connect donor generosity with learning resources, student enrichment, field experiences,
+              connect community generosity with learning resources, enrichment, field experiences,
               and meaningful educational access.
             </p>
 
-            <div className={styles.executiveHeroActions}>
-              <Link className={styles.executivePrimaryButton} href="/donate">
+            <div className={styles.editorialHeroActions}>
+              <Link className={styles.editorialPrimary} href="/donate">
                 Support the Mission
               </Link>
-              <Link className={styles.executiveSecondaryButton} href="/student-enrichment-fund">
-                View Impact Areas
+              <Link className={styles.editorialSecondary} href="/student-enrichment-fund">
+                Explore Student Enrichment
               </Link>
             </div>
 
-            <div className={styles.executiveMiniProof}>
-              <span>Education</span>
-              <span>Opportunity</span>
-              <span>Empowerment</span>
-              <span>Impact</span>
+            <div className={styles.editorialProofLine}>
+              <span>Tucson, Arizona</span>
+              <span>Traveling Scholars Foundation</span>
+              <span>Student Opportunity</span>
             </div>
           </div>
 
-          <div className={styles.executiveHeroVisual}>
+          <div className={styles.editorialHeroMedia}>
             <Image
-              className={styles.executiveHeroImage}
-              src="/hero-banner.jpg"
-              alt="The Diamond People Corp Tucson desert education support banner"
+              src="/site-images/tucson-student-education-opportunity.jpg"
+              alt="Tucson student learning with family support and educational resources"
               fill
               priority
-              sizes="(max-width: 920px) 100vw, 50vw"
+              className={styles.editorialHeroImage}
+              sizes="(max-width: 920px) 100vw, 48vw"
             />
 
-            <div className={styles.executiveHeroGlass}>
-              <span>Supporting Traveling Scholars</span>
+            <div className={styles.editorialMediaBadge}>
+              <span>Supporting Students</span>
               <strong>Investing in Futures</strong>
             </div>
           </div>
         </section>
 
-        <ExecutiveTrustStrip />
+        <EditorialPillars />
 
-        <ExecutiveSupportAreas />
+        <section className={styles.editorialImpactSplit}>
+          <div className={styles.editorialImpactImage}>
+            <Image
+              src="/site-images/education-support-impact-tucson.jpg"
+              alt="Educational supplies and learning materials showing student support impact in Tucson"
+              width={1600}
+              height={900}
+              className={styles.editorialSplitImage}
+              sizes="(max-width: 920px) 100vw, 50vw"
+            />
+          </div>
 
-        <HomepageImpactSection />
-
-        <section className={styles.section} id="mission">
-          <div className={styles.sectionHeader}>
-            <p className={styles.eyebrow}>Mission</p>
-            <h2>Education support with purpose, dignity, and community behind it.</h2>
+          <div className={styles.editorialImpactCopy}>
+            <p className={styles.eyebrow}>Where Support Goes</p>
+            <h2>Generosity becomes learning materials, experiences, and student growth.</h2>
             <p>
-              The work is centered on students and families connected to Traveling Scholars Foundation:
-              helping create access to experiences, resources, and support that can shape a stronger path forward.
+              Strong giving is not vague. It helps students participate, helps families carry
+              practical education costs, and connects support to real needs.
+            </p>
+
+            <div className={styles.editorialCheckList}>
+              <div>
+                <strong>Learning Resources</strong>
+                <span>Books, supplies, project materials, and academic tools.</span>
+              </div>
+              <div>
+                <strong>Field Experiences</strong>
+                <span>Educational trips and real-world learning opportunities.</span>
+              </div>
+              <div>
+                <strong>Student Enrichment</strong>
+                <span>Activities, tutoring, athletics, and confidence-building programs.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <ImpactGallery />
+
+        <section className={styles.editorialDonorPanel} id="partners">
+          <div>
+            <p className={styles.eyebrow}>For Donors and Partners</p>
+            <h2>Built for supporters who want their giving tied to real educational impact.</h2>
+            <p>
+              The Diamond People Corp welcomes conversations with donors, sponsors, businesses,
+              churches, foundations, and community partners who want to support student opportunity
+              with clarity and purpose.
             </p>
           </div>
 
-          <div className={styles.cardGrid}>
-            <article className={styles.card}>
-              <div className={styles.iconCircle}>✦</div>
-              <h3>Support Families</h3>
-              <p>Help committed families continue building strong, flexible, meaningful education paths.</p>
+          <div className={styles.editorialDonorList}>
+            <article>
+              <strong>Clear mission</strong>
+              <span>Education support connected to students and families.</span>
             </article>
-
-            <article className={styles.card}>
-              <div className={styles.iconCircle}>◆</div>
-              <h3>Open Opportunity</h3>
-              <p>Support access to experiences and resources that students may otherwise miss.</p>
+            <article>
+              <strong>Local relevance</strong>
+              <span>Focused on Tucson, Arizona and Traveling Scholars Foundation families.</span>
             </article>
-
-            <article className={styles.card}>
-              <div className={styles.iconCircle}>●</div>
-              <h3>Build Confidence</h3>
-              <p>Help students grow through learning moments that create exposure, direction, and momentum.</p>
+            <article>
+              <strong>Practical impact</strong>
+              <span>Support connected to resources, enrichment, field experiences, and access.</span>
             </article>
           </div>
         </section>
 
-        <section className={styles.section} id="partners">
-          <div className={styles.split}>
-            <div className={styles.splitText}>
-              <p className={styles.eyebrow}>Partners</p>
-              <h2>Built for donors, sponsors, churches, businesses, foundations, and community partners.</h2>
-              <p>
-                Serious support starts with a clear mission. The Diamond People Corp is creating a
-                student-centered path for supporters who want their generosity tied to real educational access.
-              </p>
-              <div className={styles.actions}>
-                <Link className={styles.primaryButton} href="/donation-inquiries">Start a Support Inquiry</Link>
-                <Link className={styles.secondaryButton} href="/student-enrichment-fund">View Programs</Link>
-              </div>
-            </div>
-
-            <div className={styles.splitPanel}>
-              <h3>Support focus</h3>
-              <ul>
-                <li>Student enrichment and learning access</li>
-                <li>Family education support</li>
-                <li>Field experiences and activity participation</li>
-                <li>Community partnerships with measurable purpose</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.section} id="contact">
-          <div className={styles.ctaBand}>
-            <p className={styles.eyebrow}>Contact</p>
-            <h2>Begin a serious support conversation.</h2>
+        <section className={styles.editorialFinalCta} id="contact">
+          <div>
+            <p className={styles.eyebrow}>Begin the Conversation</p>
+            <h2>Support educational opportunity in Tucson.</h2>
             <p>
               For giving, sponsorship, or partnership questions, contact The Diamond People Corp directly.
             </p>
-            <div className={styles.actions}>
-              <Link className={styles.primaryButton} href="mailto:info@thediamondpeoplecorp.org">
-                info@thediamondpeoplecorp.org
-              </Link>
-              <Link className={styles.secondaryButton} href="/donation-inquiries">
-                Support Inquiries
-              </Link>
-            </div>
+          </div>
+
+          <div className={styles.editorialFinalActions}>
+            <Link className={styles.editorialPrimary} href="/donation-inquiries">
+              Start a Support Inquiry
+            </Link>
+            <Link className={styles.editorialSecondaryLight} href="mailto:info@thediamondpeoplecorp.org">
+              Email the Organization
+            </Link>
           </div>
         </section>
       </main>
