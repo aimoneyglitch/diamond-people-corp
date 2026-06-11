@@ -27,9 +27,8 @@ export function SiteHeader() {
           <Link href="/support-homeschool-families">Families</Link>
           <Link href="/student-enrichment-fund">Programs</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/#partners">Partners</Link>
           <Link href="/#contact">Contact</Link>
-          <Link className={styles.navDonate} href="/donate">Support Students</Link>
+          <Link className={styles.navDonate} href="/donate">Give</Link>
         </nav>
       </div>
     </header>
