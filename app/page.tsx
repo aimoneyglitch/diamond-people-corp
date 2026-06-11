@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./donor.module.css";
-import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } from "./components/DpcShell";
+import { HomepageImpactSection, SiteFooter, SiteHeader } from "./components/DpcShell";
 
 export const metadata: Metadata = {
   title: "Tucson Education Nonprofit | The Diamond People Corp",
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </section>
 
-        <WhereSupportGoesSection />
+        <HomepageImpactSection />
 
         <section className={styles.section} id="mission">
           <div className={styles.sectionHeader}>
@@ -185,8 +185,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <DonorTrustSection />
 
         <section className={styles.section} id="contact">
           <div className={styles.sectionHeader}>
