@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./donor.module.css";
 import { SiteFooter, SiteHeader } from "./components/DpcShell";
@@ -18,8 +19,19 @@ export default function Home() {
       <SiteHeader />
 
       <main className={styles.main}>
-        <section className={`${styles.hero} ${styles.homeHeroBanner}`}>
-          <div className={styles.homeHeroContent}>
+        <section className={styles.homeHeroStack}>
+          <div className={styles.homeHeroPhotoFrame}>
+            <Image
+              src="/hero-banner.jpg"
+              alt="The Diamond People Corp Tucson education banner"
+              fill
+              priority
+              sizes="100vw"
+              className={styles.homeHeroPhoto}
+            />
+          </div>
+
+          <div className={styles.homeHeroMissionCard}>
             <p className={styles.eyebrow}>Tucson, Arizona Nonprofit</p>
             <h1>The Diamond People Corp</h1>
             <p className={styles.lead}>

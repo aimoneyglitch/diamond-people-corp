@@ -744,3 +744,84 @@
     font-size: clamp(3rem, 14vw, 4.5rem) !important;
   }
 }
+
+/* FINAL HERO LAYOUT: BANNER IMAGE FIRST, TEXT UNDERNEATH */
+.homeHeroStack {
+  width: min(1180px, calc(100% - 32px));
+  margin: 38px auto 34px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+.homeHeroPhotoFrame {
+  position: relative;
+  min-height: clamp(430px, 48vw, 690px);
+  border-radius: 38px;
+  overflow: hidden;
+  background: #2b173f;
+  border: 1px solid rgba(110, 51, 178, 0.16);
+  box-shadow: 0 32px 90px rgba(35, 20, 47, 0.20);
+}
+
+.homeHeroPhotoFrame::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.homeHeroPhoto {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.homeHeroMissionCard {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 54px);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(110, 51, 178, 0.13);
+  box-shadow: 0 24px 65px rgba(35, 20, 47, 0.10);
+  text-align: center;
+}
+
+.homeHeroMissionCard h1 {
+  margin: 18px auto 16px;
+  font-size: clamp(3.2rem, 7vw, 6.7rem);
+  max-width: 900px;
+}
+
+.homeHeroMissionCard .lead {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+}
+
+.homeHeroMissionCard .actions {
+  justify-content: center;
+}
+
+@media (max-width: 920px) {
+  .homeHeroStack {
+    margin-top: 22px;
+  }
+
+  .homeHeroPhotoFrame {
+    min-height: 360px;
+    border-radius: 28px;
+  }
+
+  .homeHeroMissionCard {
+    text-align: left;
+    padding: 28px;
+  }
+
+  .homeHeroMissionCard .actions {
+    justify-content: flex-start;
+  }
+}
