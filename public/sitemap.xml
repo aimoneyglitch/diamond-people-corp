@@ -1,68 +1,129 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://thediamondpeoplecorp.org/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/og-diamond-people-corp.jpg</image:loc>
+      <image:title>The Diamond People Corp</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/donate/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/donation-inquiries/</loc>
     <lastmod>2026-06-11</lastmod>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/support-homeschool-families/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/support-homeschool-families-tucson.jpg</image:loc>
+      <image:title>Support Homeschool Families in Tucson</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/student-enrichment-fund/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/where-education-donations-go.jpg</image:loc>
+      <image:title>Student Enrichment Fund Tucson</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/support-homeschool-families-tucson/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/support-homeschool-families-tucson.jpg</image:loc>
+      <image:title>How to Support Homeschool Families in Tucson</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/why-homeschool-families-need-educational-donations/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/why-homeschool-families-need-educational-donations.jpg</image:loc>
+      <image:title>Why Homeschool Families Need Educational Donations</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/homeschool-scholarships-arizona-donations/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/homeschool-scholarships-arizona-donations.jpg</image:loc>
+      <image:title>Homeschool Scholarships in Arizona</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/where-education-donations-go/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/where-education-donations-go.jpg</image:loc>
+      <image:title>Where Education Donations Go</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/blog/arizona-esa-homeschool-support/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/blog/arizona-esa-homeschool-support.jpg</image:loc>
+      <image:title>Arizona ESA and Homeschool Support</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/privacy-policy/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.45</priority>
   </url>
+
   <url>
     <loc>https://thediamondpeoplecorp.org/terms/</loc>
     <lastmod>2026-06-11</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.45</priority>
   </url>
+
 </urlset>
