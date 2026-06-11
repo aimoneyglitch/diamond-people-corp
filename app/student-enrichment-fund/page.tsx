@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
+import { PremiumImage } from "../components/PremiumImages";
 
 export const metadata: Metadata = {
   title: "Student Enrichment Fund Tucson | DPC",
@@ -63,6 +64,12 @@ export default function StudentEnrichmentFundPage() {
           </div>
         </section>
 
+        {/* PREMIUM SITE IMAGE START: enrichment hero image */}
+        <section className={styles.premiumSingleImageSection}>
+          <PremiumImage imageKey="studentFieldTripLearning" priority />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
+
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Education is more than a worksheet.</h2>
@@ -77,6 +84,24 @@ export default function StudentEnrichmentFundPage() {
             <article className={styles.card}><h3>Learning Materials</h3><p>Help families access books, project supplies, technology, and curriculum support.</p></article>
           </div>
         </section>
+
+                {/* PREMIUM SITE IMAGE START: enrichment gallery images */}
+        <section className={styles.premiumVisualSection}>
+          <div className={styles.premiumVisualCopy}>
+            <p className={styles.eyebrow}>Student Enrichment</p>
+            <h2>Growth happens through experience, activity, and the right resources.</h2>
+            <p>
+              A premium donor page should show the full range of enrichment: real-world learning,
+              confidence-building activities, and the materials students need to participate fully.
+            </p>
+          </div>
+
+          <div className={styles.premiumImageGridTwo}>
+            <PremiumImage imageKey="youthSportsEnrichment" />
+            <PremiumImage imageKey="learningSuppliesEnrichment" />
+          </div>
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
 
         <DonationCta />
       </main>

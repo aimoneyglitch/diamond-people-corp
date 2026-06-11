@@ -1956,3 +1956,105 @@
     min-width: 0 !important;
   }
 }
+
+/* PREMIUM SITE IMAGE SYSTEM */
+.premiumSingleImageSection,
+.premiumVisualSection {
+  width: min(1180px, calc(100% - 32px));
+  margin: 34px auto;
+}
+
+.premiumSingleImageSection {
+  display: block;
+}
+
+.premiumVisualSection {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: clamp(18px, 3vw, 30px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 42px);
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(215, 169, 77, 0.16), transparent 18rem),
+    radial-gradient(circle at 86% 16%, rgba(110, 51, 178, 0.12), transparent 20rem),
+    rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 24px 70px rgba(39, 21, 55, 0.075);
+}
+
+.premiumVisualCopy {
+  max-width: 520px;
+}
+
+.premiumVisualCopy h2 {
+  margin: 14px 0;
+  color: #171123;
+  font-size: clamp(2rem, 4vw, 3.65rem);
+  line-height: 1.02;
+  letter-spacing: -0.052em;
+  font-weight: 950;
+}
+
+.premiumVisualCopy p {
+  color: #5a4a64;
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+
+.premiumImageFrame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(215, 169, 77, 0.18), transparent 12rem),
+    linear-gradient(135deg, #2b173f, #6e33b2);
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 22px 62px rgba(39, 21, 55, 0.13);
+}
+
+.premiumSiteImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.premiumImageGridTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.premiumImageGridTwo .premiumImageFrame {
+  border-radius: 28px;
+}
+
+@media (max-width: 920px) {
+  .premiumSingleImageSection,
+  .premiumVisualSection {
+    width: calc(100% - 22px);
+    margin: 24px auto;
+  }
+
+  .premiumVisualSection {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    border-radius: 26px;
+  }
+
+  .premiumVisualCopy {
+    max-width: none;
+    text-align: center;
+  }
+
+  .premiumImageGridTwo {
+    grid-template-columns: 1fr;
+  }
+
+  .premiumImageFrame {
+    border-radius: 22px;
+  }
+}

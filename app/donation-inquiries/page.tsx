@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "../donor.module.css";
 import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } from "../components/DpcShell";
+import { PremiumImage } from "../components/PremiumImages";
 
 export const metadata: Metadata = {
   title: "Donation Inquiries for Tucson Education Support",
@@ -68,6 +69,20 @@ export default function DonationInquiriesPage() {
             </Link>
           </div>
         </section>
+
+        {/* PREMIUM SITE IMAGE START: donation inquiry meeting image */}
+        <section className={styles.premiumVisualSection}>
+          <div className={styles.premiumVisualCopy}>
+            <p className={styles.eyebrow}>Serious Donor Conversations</p>
+            <h2>Large gifts and partnerships deserve a clear, professional path.</h2>
+            <p>
+              This page is built for donors, sponsors, grant conversations, and partners who want
+              an organized way to begin supporting student opportunity.
+            </p>
+          </div>
+          <PremiumImage imageKey="donationInquiryMeeting" priority />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
 
         <section className={styles.section}>
           <div className={styles.trustIntro}>

@@ -12,6 +12,14 @@
       <image:loc>https://thediamondpeoplecorp.org/og-diamond-people-corp.jpg</image:loc>
       <image:title>The Diamond People Corp</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/tucson-student-education-opportunity.jpg</image:loc>
+      <image:title>Tucson Student Education Opportunity</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/education-support-impact-tucson.jpg</image:loc>
+      <image:title>Education Support Impact in Tucson</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -19,6 +27,14 @@
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/donate-to-homeschool-families-tucson.jpg</image:loc>
+      <image:title>Donate to Homeschool Families in Tucson</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/student-enrichment-donation-impact.jpg</image:loc>
+      <image:title>Student Enrichment Donation Impact</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -26,6 +42,10 @@
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/donation-inquiry-support-meeting.jpg</image:loc>
+      <image:title>Donation Inquiry Support Meeting</image:title>
+    </image:image>
   </url>
 
   <url>
@@ -34,8 +54,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thediamondpeoplecorp.org/blog/support-homeschool-families-tucson.jpg</image:loc>
-      <image:title>Support Homeschool Families in Tucson</image:title>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/homeschool-family-support-tucson.jpg</image:loc>
+      <image:title>Homeschool Family Support in Tucson</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/homeschool-student-learning-opportunity.jpg</image:loc>
+      <image:title>Homeschool Student Learning Opportunity</image:title>
     </image:image>
   </url>
 
@@ -45,8 +69,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thediamondpeoplecorp.org/blog/where-education-donations-go.jpg</image:loc>
-      <image:title>Student Enrichment Fund Tucson</image:title>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/student-field-trip-learning-tucson.jpg</image:loc>
+      <image:title>Student Field Trip Learning in Tucson</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/youth-sports-student-enrichment.jpg</image:loc>
+      <image:title>Youth Sports Student Enrichment</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thediamondpeoplecorp.org/site-images/learning-supplies-student-enrichment.jpg</image:loc>
+      <image:title>Learning Supplies for Student Enrichment</image:title>
     </image:image>
   </url>
 

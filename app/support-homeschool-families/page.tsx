@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
+import { PremiumImage } from "../components/PremiumImages";
 
 export const metadata: Metadata = {
   title: "Support Homeschool Families in Tucson | DPC",
@@ -63,6 +64,12 @@ export default function SupportHomeschoolFamiliesPage() {
           </div>
         </section>
 
+        {/* PREMIUM SITE IMAGE START: family support hero image */}
+        <section className={styles.premiumSingleImageSection}>
+          <PremiumImage imageKey="homeschoolFamilySupport" priority />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
+
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Why Homeschool Families Need Support</h2>
@@ -100,6 +107,20 @@ export default function SupportHomeschoolFamiliesPage() {
             </div>
           </div>
         </section>
+
+                {/* PREMIUM SITE IMAGE START: family support outcome image */}
+        <section className={styles.premiumVisualSection}>
+          <div className={styles.premiumVisualCopy}>
+            <p className={styles.eyebrow}>Family Support</p>
+            <h2>Families are doing the work. Support helps them keep going.</h2>
+            <p>
+              The strongest giving story is not about charity alone. It is about helping committed
+              families access the tools and experiences that move students forward.
+            </p>
+          </div>
+          <PremiumImage imageKey="homeschoolStudentOpportunity" />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
 
         <DonationCta />
       </main>

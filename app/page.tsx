@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./donor.module.css";
 import { HomepageImpactSection, SiteFooter, SiteHeader } from "./components/DpcShell";
+import { PremiumImage } from "./components/PremiumImages";
 
 export const metadata: Metadata = {
   title: "Tucson Education Nonprofit | The Diamond People Corp",
@@ -101,6 +102,24 @@ export default function Home() {
         </section>
 
         <HomepageImpactSection />
+
+        {/* PREMIUM SITE IMAGE START: homepage visual story */}
+        <section className={styles.premiumVisualSection}>
+          <div className={styles.premiumVisualCopy}>
+            <p className={styles.eyebrow}>Student Opportunity</p>
+            <h2>Premium support should feel personal, practical, and real.</h2>
+            <p>
+              The right support helps students access the learning moments, tools, and experiences
+              that shape confidence beyond the basics.
+            </p>
+          </div>
+
+          <div className={styles.premiumImageGridTwo}>
+            <PremiumImage imageKey="tucsonStudentOpportunity" priority />
+            <PremiumImage imageKey="educationSupportImpact" />
+          </div>
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
 
         <section className={styles.section} id="mission">
           <div className={styles.sectionHeader}>

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "../donor.module.css";
 import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } from "../components/DpcShell";
+import { PremiumImage } from "../components/PremiumImages";
 
 export const metadata: Metadata = {
   title: "Donate to Homeschool Families in Tucson | DPC",
@@ -67,6 +68,12 @@ export default function DonatePage() {
           </div>
         </section>
 
+        {/* PREMIUM SITE IMAGE START: donate hero image */}
+        <section className={styles.premiumSingleImageSection}>
+          <PremiumImage imageKey="donateHomeschoolFamilies" priority />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
+
         <section className={styles.section}>
           <div className={styles.donatePath}>
             <div className={styles.donatePathIntro}>
@@ -100,6 +107,20 @@ export default function DonatePage() {
             </div>
           </div>
         </section>
+
+                {/* PREMIUM SITE IMAGE START: donate impact image */}
+        <section className={styles.premiumVisualSection}>
+          <div className={styles.premiumVisualCopy}>
+            <p className={styles.eyebrow}>What Giving Becomes</p>
+            <h2>Support should translate into visible student opportunity.</h2>
+            <p>
+              Strong donor presentation means showing the human side and the practical outcome:
+              families supported, students equipped, and opportunities made possible.
+            </p>
+          </div>
+          <PremiumImage imageKey="studentEnrichmentDonationImpact" />
+        </section>
+        {/* PREMIUM SITE IMAGE END */}
 
         <WhereSupportGoesSection />
 
