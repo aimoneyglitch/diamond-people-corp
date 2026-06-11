@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
@@ -9,9 +10,13 @@ export const metadata: Metadata = {
   description:
     "Guides about supporting homeschool families, education donations, homeschool scholarships, Arizona ESA, student enrichment, field trips, supplies, and community partnerships.",
   alternates: {
-    canonical: "https://thediamondpeoplecorp.org/blog"
+    canonical: "https://thediamondpeoplecorp.org/blog/"
   }
 };
+
+function publicImagePath(imageFile: string) {
+  return imageFile.startsWith("public/") ? imageFile.replace("public", "") : imageFile;
+}
 
 export default function BlogPage() {
   return (
@@ -31,7 +36,16 @@ export default function BlogPage() {
           <div className={styles.blogGrid}>
             {blogPosts.map((post) => (
               <Link className={styles.blogCard} href={`/blog/${post.slug}/`} key={post.slug}>
-                <div className={styles.imagePlaceholder}>{post.imageFile}</div>
+                <div className={styles.blogImageWrap}>
+                  <Image
+                    src={publicImagePath(post.imageFile)}
+                    alt={post.imageAlt}
+                    width={900}
+                    height={506}
+                    className={styles.blogImage}
+                    sizes="(max-width: 920px) 100vw, 33vw"
+                  />
+                </div>
                 <span className={styles.keyword}>{post.keyword}</span>
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
@@ -47,4 +61,3 @@ export default function BlogPage() {
     </div>
   );
 }
-

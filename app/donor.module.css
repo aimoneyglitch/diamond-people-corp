@@ -825,3 +825,45 @@
     justify-content: flex-start;
   }
 }
+
+/* REAL BLOG FEATURED IMAGES */
+.blogImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 22px;
+  margin-bottom: 20px;
+  background: #2b173f;
+  box-shadow: 0 16px 36px rgba(35, 20, 47, 0.12);
+}
+
+.blogImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 220ms ease;
+}
+
+.blogCard:hover .blogImage {
+  transform: scale(1.035);
+}
+
+.articleFeaturedImageWrap {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto 28px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 24px 65px rgba(35, 20, 47, 0.13);
+  background: #2b173f;
+}
+
+.articleFeaturedImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

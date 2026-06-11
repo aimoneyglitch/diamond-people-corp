@@ -1,8 +1,13 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "./DpcShell";
 import { blogPosts } from "../lib/seoContent";
+
+function publicImagePath(imageFile: string) {
+  return imageFile.startsWith("public/") ? imageFile.replace("public", "") : imageFile;
+}
 
 export function BlogArticle({ slug }: { slug: string }) {
   const post = blogPosts.find((item) => item.slug === slug);
@@ -26,6 +31,18 @@ export function BlogArticle({ slug }: { slug: string }) {
               <span>The Diamond People Corp</span>
             </div>
           </header>
+
+          <div className={styles.articleFeaturedImageWrap}>
+            <Image
+              src={publicImagePath(post.imageFile)}
+              alt={post.imageAlt}
+              width={1600}
+              height={900}
+              priority
+              className={styles.articleFeaturedImage}
+              sizes="(max-width: 920px) 100vw, 920px"
+            />
+          </div>
 
           <div className={styles.articleBody}>
             <div className={styles.articleCallout}>
