@@ -171,7 +171,7 @@ export function SiteFooter() {
             education, enrichment, and community partnership.
           </p>
         </div>
-        <Link className={styles.footerDonateButton} href="/donate">Give or Sponsor</Link>
+        <Link className={styles.footerDonateButton} href="/donation-inquiries">Start a Giving Inquiry</Link>
       </div>
 
       <div className={styles.footerGrid}>
