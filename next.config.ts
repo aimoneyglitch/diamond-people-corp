@@ -2,9 +2,10 @@
 
 const nextConfig: NextConfig = {
   output: "export",
+  trailingSlash: false,
   images: {
-    unoptimized: true,
-  },
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
