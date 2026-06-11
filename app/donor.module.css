@@ -543,3 +543,62 @@
 .heroPanel .panelCard {
   z-index: 2;
 }
+
+.homeHeroBanner {
+  position: relative;
+  min-height: 640px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-radius: 36px;
+  margin-top: 42px;
+  margin-bottom: 34px;
+  padding: clamp(46px, 8vw, 96px);
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255, 250, 241, 0.96) 0%, rgba(255, 250, 241, 0.88) 38%, rgba(43, 23, 63, 0.35) 72%, rgba(43, 23, 63, 0.18) 100%),
+    url("/hero-banner.jpg");
+  background-size: cover;
+  background-position: center right;
+  box-shadow: 0 30px 80px rgba(35, 20, 47, 0.18);
+}
+
+.homeHeroBanner::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: 26px;
+  border: 1px solid rgba(110, 51, 178, 0.16);
+  pointer-events: none;
+}
+
+.homeHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  padding: clamp(22px, 4vw, 38px);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(110, 51, 178, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 22px 55px rgba(35, 20, 47, 0.10);
+}
+
+.homeHeroBanner h1 {
+  text-shadow: 0 14px 32px rgba(35, 20, 47, 0.13);
+}
+
+@media (max-width: 920px) {
+  .homeHeroBanner {
+    min-height: 560px;
+    padding: 28px;
+    background:
+      linear-gradient(180deg, rgba(255, 250, 241, 0.96) 0%, rgba(255, 250, 241, 0.86) 54%, rgba(43, 23, 63, 0.26) 100%),
+      url("/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .homeHeroContent {
+    max-width: none;
+  }
+}

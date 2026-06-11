@@ -18,8 +18,8 @@ export default function Home() {
       <SiteHeader />
 
       <main className={styles.main}>
-        <section className={styles.hero}>
-          <div>
+        <section className={`${styles.hero} ${styles.homeHeroBanner}`}>
+          <div className={styles.homeHeroContent}>
             <p className={styles.eyebrow}>Tucson, Arizona Nonprofit</p>
             <h1>The Diamond People Corp</h1>
             <p className={styles.lead}>
@@ -33,28 +33,6 @@ export default function Home() {
             <div className={styles.actions}>
               <Link className={styles.primaryButton} href="#mission">Our Mission</Link>
               <Link className={styles.secondaryButton} href="#partners">Partner With Us</Link>
-            </div>
-          </div>
-
-          <div className={styles.heroPanel} aria-label="The Diamond People Corp supporting students and families">
-            <Image
-              src="/hero-banner.jpg"
-              alt="Tucson students and homeschool families supported by The Diamond People Corp"
-              fill
-              priority
-              sizes="(max-width: 920px) 100vw, 50vw"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center"
-              }}
-            />
-            <div className={styles.heroOverlay} />
-            <div className={styles.panelCard}>
-              <strong>Supporting Traveling Scholars. Investing in Futures.</strong>
-              <p>
-                Helping students and families access educational opportunities, enrichment,
-                field trips, youth activities, and community-supported learning experiences.
-              </p>
             </div>
           </div>
         </section>
@@ -184,4 +162,3 @@ export default function Home() {
     </div>
   );
 }
-
