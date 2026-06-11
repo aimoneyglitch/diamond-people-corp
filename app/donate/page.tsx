@@ -52,17 +52,17 @@ export default function DonatePage() {
       <main>
         <section className={styles.pageHero}>
           <p className={styles.eyebrow}>Give With Purpose</p>
-          <h1>Help a student say yes to an opportunity.</h1>
+          <h1>Help a student access the opportunity in front of them.</h1>
           <p className={styles.lead}>
-            Your support helps remove the cost barriers that can keep families from accessing
-            meaningful learning experiences, student activities, and enrichment.
+            The Diamond People Corp connects donor support with education-related needs for
+            families connected to Traveling Scholars Foundation.
           </p>
           <div className={styles.actions}>
             <Link className={styles.primaryButton} href="/donation-inquiries">
-              Start a Donation Inquiry
+              Start a Giving Inquiry
             </Link>
             <Link className={styles.secondaryButton} href="/blog/where-education-donations-go/">
-              See Where Support Goes
+              See the Impact Areas
             </Link>
           </div>
         </section>
@@ -70,31 +70,32 @@ export default function DonatePage() {
         <section className={styles.section}>
           <div className={styles.donatePath}>
             <div className={styles.donatePathIntro}>
-              <p className={styles.eyebrow}>How Giving Helps</p>
-              <h2>Support turns into access.</h2>
+              <p className={styles.eyebrow}>Donor Path</p>
+              <h2>A cleaner way to support student access.</h2>
               <p>
-                Families may have the commitment, structure, and heart for education while still needing
-                help with the costs that sit outside the basics.
+                Whether the support comes from an individual donor, business, church, foundation,
+                or community partner, the goal is the same: help students participate in meaningful
+                learning opportunities.
               </p>
             </div>
 
             <div className={styles.donatePathCards}>
               <article>
                 <span>01</span>
-                <h3>A family has a real need</h3>
-                <p>Supplies, trips, activities, tutoring, or program costs can add up quickly.</p>
+                <h3>Start the conversation</h3>
+                <p>Share the type of giving, sponsorship, grant, or partnership you want to discuss.</p>
               </article>
 
               <article>
                 <span>02</span>
-                <h3>A donor helps close the gap</h3>
-                <p>Support makes it easier for a student to participate instead of sit out.</p>
+                <h3>Align the support</h3>
+                <p>The organization can help identify the best fit for the mission and student needs.</p>
               </article>
 
               <article>
                 <span>03</span>
-                <h3>A student gets the experience</h3>
-                <p>The result is confidence, exposure, connection, and a stronger learning path.</p>
+                <h3>Move with clarity</h3>
+                <p>Donors and partners get a more intentional path than a generic email button.</p>
               </article>
             </div>
           </div>
@@ -105,23 +106,23 @@ export default function DonatePage() {
         <section className={styles.section}>
           <div className={styles.split}>
             <div className={styles.splitText}>
-              <p className={styles.eyebrow}>Ways to Participate</p>
-              <h2>There is more than one way to help.</h2>
+              <p className={styles.eyebrow}>Digital Giving</p>
+              <h2>A secure online giving option is the next step.</h2>
               <p>
-                Individuals, businesses, churches, foundations, and community partners can support
-                students through giving, sponsorships, supplies, grants, or program partnerships.
+                The site is being prepared for a dedicated giving page connected to a trusted
+                donation platform. Bank information should stay inside the payment provider,
+                not inside the website code.
               </p>
             </div>
 
             <div className={styles.splitPanel}>
-              <h3>Current giving path</h3>
+              <h3>Current status</h3>
               <p>
-                The organization is currently handling giving conversations directly while the secure
-                online donation system is being prepared.
+                Larger gifts, sponsorships, grants, and partnership conversations can begin through
+                direct inquiry while the secure donation system is finalized.
               </p>
-              <p><strong>Email:</strong> info@thediamondpeoplecorp.org</p>
               <Link className={styles.primaryButton} href="/donation-inquiries">
-                Start an Inquiry
+                Start a Giving Inquiry
               </Link>
             </div>
           </div>

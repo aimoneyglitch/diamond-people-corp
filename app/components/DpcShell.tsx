@@ -41,30 +41,30 @@ export function HomepageImpactSection() {
     <section className={styles.homepageImpact}>
       <div className={styles.homepageImpactIntro}>
         <p className={styles.eyebrow}>Why This Matters</p>
-        <h2>Some opportunities change how a student sees their future.</h2>
+        <h2>Opportunity should not depend on whether a family can cover every extra cost.</h2>
         <p>
-          A field trip, the right materials, a team activity, or a guided learning experience can become
-          the moment a student feels capable, seen, and ready for more.
+          The Diamond People Corp helps connect community support with meaningful educational access
+          for families connected to Traveling Scholars Foundation.
         </p>
       </div>
 
       <div className={styles.homepageImpactGrid}>
         <article>
-          <span>Experience</span>
-          <h3>Learning beyond the desk</h3>
-          <p>Real-world experiences help students connect lessons to life, confidence, and curiosity.</p>
+          <span>Access</span>
+          <h3>Remove financial barriers</h3>
+          <p>Support helps students participate in learning experiences that might otherwise be out of reach.</p>
         </article>
 
         <article>
-          <span>Access</span>
-          <h3>Support when costs get heavy</h3>
-          <p>Families can be committed and still need help covering the extras that make education richer.</p>
+          <span>Growth</span>
+          <h3>Invest beyond the basics</h3>
+          <p>Enrichment, activities, and real-world learning help students build confidence and direction.</p>
         </article>
 
         <article>
           <span>Community</span>
-          <h3>A local network around students</h3>
-          <p>Donors, partners, and families can work together to open doors students might otherwise miss.</p>
+          <h3>Stand behind families</h3>
+          <p>Local partners and donors can help families continue building strong education paths.</p>
         </article>
       </div>
     </section>
@@ -74,16 +74,16 @@ export function HomepageImpactSection() {
 export function WhereSupportGoesSection() {
   const items = [
     {
-      title: "Field Experiences",
-      text: "Transportation, admission, and activity support for learning outside the home."
+      title: "Learning Access",
+      text: "Materials, tools, curriculum support, and practical resources that help students keep moving forward."
     },
     {
-      title: "Materials and Tools",
-      text: "Books, project supplies, curriculum support, and practical learning resources."
+      title: "Student Experiences",
+      text: "Field learning, enrichment activities, athletics, workshops, and programs that expand opportunity."
     },
     {
-      title: "Enrichment Opportunities",
-      text: "Workshops, tutoring, activities, athletics, and programs that help students grow."
+      title: "Family Support",
+      text: "Scholarship-style assistance that helps reduce pressure when educational costs become a barrier."
     }
   ];
 
@@ -91,10 +91,9 @@ export function WhereSupportGoesSection() {
     <section className={styles.section}>
       <div className={styles.trustIntro}>
         <p className={styles.eyebrow}>Use of Support</p>
-        <h2>Support is directed toward real student needs.</h2>
+        <h2>Every giving conversation starts with student access.</h2>
         <p>
-          The goal is simple: help families say yes to meaningful educational opportunities
-          when cost would otherwise become the barrier.
+          Support is focused on practical needs that help families say yes to meaningful educational opportunities.
         </p>
       </div>
 
@@ -115,29 +114,29 @@ export function DonorTrustSection() {
     <section className={styles.trustBand}>
       <div className={styles.trustBandText}>
         <p className={styles.eyebrow}>Donor Confidence</p>
-        <h2>Clear purpose. Local focus. Direct communication.</h2>
+        <h2>A clear mission with a direct giving conversation.</h2>
         <p>
-          The Diamond People Corp keeps the giving conversation straightforward so supporters understand
-          the mission before they participate.
+          The Diamond People Corp presents support opportunities clearly so donors, sponsors,
+          and partners understand the purpose before participating.
         </p>
       </div>
 
       <div className={styles.trustChecklist}>
         <div>
-          <strong>Mission-led</strong>
-          <p>Support is centered on students, families, education, and opportunity.</p>
+          <strong>Student-centered</strong>
+          <p>Support is focused on education, access, confidence, and opportunity.</p>
         </div>
         <div>
           <strong>Locally grounded</strong>
           <p>The work is connected to Tucson, Arizona families and Traveling Scholars Foundation.</p>
         </div>
         <div>
-          <strong>No vague giving path</strong>
-          <p>Donation, sponsorship, grant, and partnership conversations are handled directly.</p>
+          <strong>Direct communication</strong>
+          <p>Giving, sponsorship, grant, and partnership questions are handled intentionally.</p>
         </div>
         <div>
-          <strong>Responsible wording</strong>
-          <p>The site does not promise tax treatment without proper confirmation.</p>
+          <strong>Responsible language</strong>
+          <p>The site does not make tax-treatment promises without proper confirmation.</p>
         </div>
       </div>
     </section>
@@ -148,7 +147,7 @@ export function DonationCta() {
   return (
     <section className={styles.ctaBand}>
       <p className={styles.eyebrow}>Support Students</p>
-      <h2>Help create access where cost gets in the way.</h2>
+      <h2>Help open the next door for a student.</h2>
       <p>
         Start a giving, sponsorship, grant, or partnership conversation with The Diamond People Corp.
       </p>
@@ -168,8 +167,8 @@ export function SiteFooter() {
           <p className={styles.eyebrow}>Tucson Education Support</p>
           <h2>Helping students access more than the basics.</h2>
           <p>
-            The Diamond People Corp supports Traveling Scholars Foundation families through education,
-            enrichment, and community partnership.
+            The Diamond People Corp supports Traveling Scholars Foundation families through
+            education, enrichment, and community partnership.
           </p>
         </div>
         <Link className={styles.footerDonateButton} href="/donate">Give or Sponsor</Link>
@@ -217,14 +216,14 @@ export function SiteFooter() {
           <h3>Contact</h3>
           <Link href="mailto:info@thediamondpeoplecorp.org">info@thediamondpeoplecorp.org</Link>
           <span>Tucson, Arizona</span>
-          <span>Donation, sponsorship, grant, and partnership inquiries welcome.</span>
+          <span>Giving, sponsorship, grant, and partnership inquiries welcome.</span>
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <div>
           <p>© The Diamond People Corp. Supporting Traveling Scholars Foundation students and families.</p>
-          <p>Donation and sponsorship inquiries are reviewed directly by The Diamond People Corp.</p>
+          <p>Inquiries are reviewed directly by The Diamond People Corp.</p>
         </div>
         <div className={styles.footerLegalLinks}>
           <Link href="/donation-inquiries/">Donation Inquiries</Link>

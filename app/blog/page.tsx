@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../donor.module.css";
-import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
+import { SiteFooter, SiteHeader } from "../components/DpcShell";
 import { blogPosts } from "../lib/seoContent";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Arizona ESA support",
     "homeschool scholarships Arizona",
     "where education donations go"
-],
+  ],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/blog/"
   },
@@ -57,10 +57,10 @@ export default function BlogPage() {
       <main>
         <section className={styles.pageHero}>
           <p className={styles.eyebrow}>Education Support Blog</p>
-          <h1>Guides for Donors, Partners, and Homeschool Families</h1>
+          <h1>Guides for families, donors, and community partners.</h1>
           <p className={styles.lead}>
-            Helpful articles about donating to homeschool families, supporting K-12 enrichment, funding
-            field trips, understanding student needs, and creating educational opportunity in Tucson and Arizona.
+            Clear articles about homeschool support, student enrichment, giving impact,
+            and education access in Tucson and Arizona.
           </p>
         </section>
 
@@ -86,8 +86,6 @@ export default function BlogPage() {
             ))}
           </div>
         </section>
-
-        <DonationCta />
       </main>
       <SiteFooter />
     </div>
