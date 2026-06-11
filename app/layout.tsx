@@ -2,39 +2,54 @@
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thediamondpeople.org"),
-  title: "The Diamond People Corp | Scholarships, Educational Support & Homeschool Enrichment",
+  metadataBase: new URL("https://thediamondpeoplecorp.org"),
+  title: {
+    default: "The Diamond People Corp | Supporting Traveling Scholars",
+    template: "%s | The Diamond People Corp"
+  },
   description:
-    "The Diamond People Corp is a Tucson, Arizona nonprofit supporting Traveling Scholars Foundation students and families through scholarships, educational field trips, homeschool enrichment, youth sports, and community partnerships.",
-  keywords: [
-    "The Diamond People Corp",
-    "Traveling Scholars Foundation",
-    "homeschool scholarships Arizona",
-    "educational nonprofit Tucson",
-    "student scholarships Arizona",
-    "homeschool enrichment programs",
-    "educational field trips",
-    "youth sports scholarships",
-    "K-12 educational support",
-    "community education partnerships",
-  ],
+    "The Diamond People Corp supports Traveling Scholars Foundation students and families through education, opportunity, empowerment, scholarships, enrichment, field trips, learning supplies, and community partnership in Tucson, Arizona.",
+  applicationName: "The Diamond People Corp",
+  authors: [{ name: "The Diamond People Corp" }],
+  creator: "The Diamond People Corp",
+  publisher: "The Diamond People Corp",
+  alternates: {
+    canonical: "/"
+  },
   openGraph: {
-    title: "The Diamond People Corp",
-    description:
-      "Supporting Traveling Scholars. Investing in Futures.",
-    url: "https://the-diamond-people.pages.dev",
-    siteName: "The Diamond People Corp",
-    locale: "en_US",
     type: "website",
+    url: "https://thediamondpeoplecorp.org/",
+    siteName: "The Diamond People Corp",
+    title: "The Diamond People Corp | Supporting Traveling Scholars",
+    description:
+      "Supporting Traveling Scholars Foundation students and families through education, opportunity, empowerment, scholarships, enrichment, field trips, learning supplies, and community partnership.",
     images: [
       {
-        url: "/diamond-logo.jpg",
+        url: "/og-diamond-people-corp.jpg",
         width: 1200,
-        height: 1200,
-        alt: "The Diamond People Corp logo",
-      },
+        height: 630,
+        alt: "The Diamond People Corp logo supporting Traveling Scholars Foundation"
+      }
     ],
+    locale: "en_US"
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Diamond People Corp | Supporting Traveling Scholars",
+    description:
+      "Supporting Traveling Scholars Foundation students and families through education, opportunity, empowerment, scholarships, enrichment, field trips, learning supplies, and community partnership.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/site-icon-512x512.png", sizes: "512x512", type: "image/png" }
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ]
+  }
 };
 
 const nonprofitSchema = {
