@@ -6,11 +6,43 @@ import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
 import { blogPosts } from "../lib/seoContent";
 
 export const metadata: Metadata = {
-  title: "Homeschool Donation and Education Support Blog | The Diamond People Corp",
-  description:
-    "Guides about supporting homeschool families, education donations, homeschool scholarships, Arizona ESA, student enrichment, field trips, supplies, and community partnerships.",
+  title: "Education Donation Blog Tucson | DPC",
+  description: "Read education donation guides for Tucson homeschool families, Arizona ESA support, scholarships, field trips, learning supplies, and student enrichment.",
+  keywords: [
+    "education donation blog",
+    "homeschool donations Tucson",
+    "Arizona ESA support",
+    "homeschool scholarships Arizona",
+    "where education donations go"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/blog/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/blog/",
+    siteName: "The Diamond People Corp",
+    title: "Education Donation Blog Tucson | DPC",
+    description: "Read education donation guides for Tucson homeschool families, Arizona ESA support, scholarships, field trips, learning supplies, and student enrichment.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Diamond People Corp education support blog"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Education Donation Blog Tucson | DPC",
+    description: "Read education donation guides for Tucson homeschool families, Arizona ESA support, scholarships, field trips, learning supplies, and student enrichment.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

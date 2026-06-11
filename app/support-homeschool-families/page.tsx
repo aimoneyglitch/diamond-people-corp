@@ -4,11 +4,43 @@ import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "Support Homeschool Families in Tucson and Arizona | The Diamond People Corp",
-  description:
-    "Learn how The Diamond People Corp supports homeschool families through educational enrichment, field trips, supplies, youth sports, scholarships, and community partnerships.",
+  title: "Support Homeschool Families in Tucson | DPC",
+  description: "Support Tucson homeschool families with donations for curriculum, field trips, tutoring, learning supplies, enrichment programs, and student activities.",
+  keywords: [
+    "support homeschool families Tucson",
+    "homeschool help Arizona",
+    "curriculum donations",
+    "field trip support",
+    "learning supplies for homeschool"
+],
   alternates: {
-    canonical: "https://thediamondpeoplecorp.org/support-homeschool-families"
+    canonical: "https://thediamondpeoplecorp.org/support-homeschool-families/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/support-homeschool-families/",
+    siteName: "The Diamond People Corp",
+    title: "Support Homeschool Families in Tucson | DPC",
+    description: "Support Tucson homeschool families with donations for curriculum, field trips, tutoring, learning supplies, enrichment programs, and student activities.",
+    images: [
+      {
+        url: "/blog/support-homeschool-families-tucson.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tucson homeschool family receiving educational support"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support Homeschool Families in Tucson | DPC",
+    description: "Support Tucson homeschool families with donations for curriculum, field trips, tutoring, learning supplies, enrichment programs, and student activities.",
+    images: ["/blog/support-homeschool-families-tucson.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

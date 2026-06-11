@@ -5,11 +5,43 @@ import styles from "./donor.module.css";
 import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } from "./components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "The Diamond People Corp | Supporting Traveling Scholars in Tucson, Arizona",
-  description:
-    "The Diamond People Corp supports Traveling Scholars Foundation students and families through scholarships, educational field trips, homeschool enrichment, youth sports opportunities, learning supplies, and community partnerships.",
+  title: "Tucson Education Nonprofit | The Diamond People Corp",
+  description: "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+  keywords: [
+    "Tucson education nonprofit",
+    "Traveling Scholars Foundation",
+    "homeschool support Tucson",
+    "student enrichment Tucson",
+    "education donations Arizona"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/",
+    siteName: "The Diamond People Corp",
+    title: "Tucson Education Nonprofit | The Diamond People Corp",
+    description: "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Diamond People Corp logo supporting Traveling Scholars Foundation"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tucson Education Nonprofit | The Diamond People Corp",
+    description: "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

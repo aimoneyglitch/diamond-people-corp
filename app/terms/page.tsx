@@ -5,10 +5,40 @@ import { SiteFooter, SiteHeader } from "../components/DpcShell";
 
 export const metadata: Metadata = {
   title: "Terms of Use | The Diamond People Corp",
-  description:
-    "Terms of Use for The Diamond People Corp website, donation inquiries, sponsorship inquiries, educational support content, and community partnership information.",
+  description: "Review The Diamond People Corp website terms for donation inquiries, sponsorship conversations, education-support content, and partnerships.",
+  keywords: [
+    "The Diamond People Corp terms",
+    "donation inquiry terms",
+    "education support website terms"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/terms/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/terms/",
+    siteName: "The Diamond People Corp",
+    title: "Terms of Use | The Diamond People Corp",
+    description: "Review The Diamond People Corp website terms for donation inquiries, sponsorship conversations, education-support content, and partnerships.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Diamond People Corp terms of use"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Use | The Diamond People Corp",
+    description: "Review The Diamond People Corp website terms for donation inquiries, sponsorship conversations, education-support content, and partnerships.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

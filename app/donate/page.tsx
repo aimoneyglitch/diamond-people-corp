@@ -4,11 +4,43 @@ import styles from "../donor.module.css";
 import { DonorTrustSection, DonationCta, SiteFooter, SiteHeader, WhereSupportGoesSection } from "../components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "Donate to Homeschool Families in Tucson | The Diamond People Corp",
-  description:
-    "Donate, sponsor, or partner with The Diamond People Corp to help homeschool families and K-12 students access enrichment, field trips, supplies, youth sports, and scholarships in Tucson and Arizona.",
+  title: "Donate to Homeschool Families in Tucson | DPC",
+  description: "Donate to help Tucson homeschool families access field trips, learning supplies, enrichment, youth sports, tutoring, and student scholarship support.",
+  keywords: [
+    "donate to homeschool families",
+    "Tucson education donations",
+    "homeschool donations Arizona",
+    "student scholarship support",
+    "support Traveling Scholars"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/donate/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/donate/",
+    siteName: "The Diamond People Corp",
+    title: "Donate to Homeschool Families in Tucson | DPC",
+    description: "Donate to help Tucson homeschool families access field trips, learning supplies, enrichment, youth sports, tutoring, and student scholarship support.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Donate to support Tucson homeschool families and students"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Donate to Homeschool Families in Tucson | DPC",
+    description: "Donate to help Tucson homeschool families access field trips, learning supplies, enrichment, youth sports, tutoring, and student scholarship support.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

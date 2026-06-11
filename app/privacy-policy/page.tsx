@@ -5,10 +5,40 @@ import { SiteFooter, SiteHeader } from "../components/DpcShell";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | The Diamond People Corp",
-  description:
-    "Privacy Policy for The Diamond People Corp, including how donation, sponsorship, grant, partnership, and contact inquiries are handled.",
+  description: "Read how The Diamond People Corp handles privacy for donation, sponsorship, grant, partnership, family, and education-support inquiries.",
+  keywords: [
+    "The Diamond People Corp privacy policy",
+    "donation inquiry privacy",
+    "education nonprofit privacy"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/privacy-policy/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/privacy-policy/",
+    siteName: "The Diamond People Corp",
+    title: "Privacy Policy | The Diamond People Corp",
+    description: "Read how The Diamond People Corp handles privacy for donation, sponsorship, grant, partnership, family, and education-support inquiries.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Diamond People Corp privacy policy"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | The Diamond People Corp",
+    description: "Read how The Diamond People Corp handles privacy for donation, sponsorship, grant, partnership, family, and education-support inquiries.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

@@ -4,11 +4,43 @@ import styles from "../donor.module.css";
 import { DonorTrustSection, SiteFooter, SiteHeader, WhereSupportGoesSection } from "../components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "Donation Inquiries | The Diamond People Corp",
-  description:
-    "Contact The Diamond People Corp about donations, sponsorships, grants, student support, homeschool family support, educational field trips, learning supplies, and community partnerships.",
+  title: "Donation Inquiries for Tucson Education Support",
+  description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
+  keywords: [
+    "donation inquiry Tucson",
+    "education sponsorship Tucson",
+    "grant partnership education",
+    "student support donations",
+    "homeschool sponsorship Arizona"
+],
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/donation-inquiries/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/donation-inquiries/",
+    siteName: "The Diamond People Corp",
+    title: "Donation Inquiries for Tucson Education Support",
+    description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
+    images: [
+      {
+        url: "/og-diamond-people-corp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Donation inquiries for The Diamond People Corp"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Donation Inquiries for Tucson Education Support",
+    description: "Start a donation, sponsorship, grant, or partnership inquiry to support Tucson homeschool families, student enrichment, field trips, and supplies.",
+    images: ["/og-diamond-people-corp.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 

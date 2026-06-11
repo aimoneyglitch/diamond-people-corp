@@ -4,11 +4,43 @@ import styles from "../donor.module.css";
 import { DonationCta, SiteFooter, SiteHeader } from "../components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "Student Enrichment Fund in Tucson | The Diamond People Corp",
-  description:
-    "Support student enrichment, field trips, homeschool programs, learning supplies, youth sports, and scholarship-style assistance through The Diamond People Corp in Tucson, Arizona.",
+  title: "Student Enrichment Fund Tucson | DPC",
+  description: "Help fund student enrichment in Tucson: educational field trips, learning supplies, youth sports, tutoring, homeschool programs, and scholarship support.",
+  keywords: [
+    "student enrichment fund Tucson",
+    "educational field trips",
+    "learning supplies donations",
+    "youth sports support",
+    "student activity funding"
+],
   alternates: {
-    canonical: "https://thediamondpeoplecorp.org/student-enrichment-fund"
+    canonical: "https://thediamondpeoplecorp.org/student-enrichment-fund/"
+  },
+  openGraph: {
+    type: "website",
+    url: "https://thediamondpeoplecorp.org/student-enrichment-fund/",
+    siteName: "The Diamond People Corp",
+    title: "Student Enrichment Fund Tucson | DPC",
+    description: "Help fund student enrichment in Tucson: educational field trips, learning supplies, youth sports, tutoring, homeschool programs, and scholarship support.",
+    images: [
+      {
+        url: "/blog/where-education-donations-go.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Educational supplies and student enrichment funded by donations"
+      }
+    ],
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Student Enrichment Fund Tucson | DPC",
+    description: "Help fund student enrichment in Tucson: educational field trips, learning supplies, youth sports, tutoring, homeschool programs, and scholarship support.",
+    images: ["/blog/where-education-donations-go.jpg"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 
