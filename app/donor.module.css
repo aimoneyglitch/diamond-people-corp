@@ -1126,3 +1126,292 @@
     max-width: 250px;
   }
 }
+
+/* DONOR TRUST + PREMIUM FOOTER UPGRADE */
+.trustIntro {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.trustIntro h2 {
+  margin: 14px 0;
+  color: #171123;
+  font-size: clamp(2rem, 4vw, 3.65rem);
+  line-height: 1.02;
+  letter-spacing: -0.047em;
+  font-weight: 940;
+}
+
+.trustIntro p {
+  color: #5a4a64;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.supportGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.supportCard {
+  padding: 26px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(215, 169, 77, 0.13), transparent 12rem),
+    rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 18px 48px rgba(39, 21, 55, 0.075);
+}
+
+.supportCard span {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 950;
+  background: linear-gradient(135deg, #6e33b2, #d7a94d);
+}
+
+.supportCard h3 {
+  margin: 0 0 10px;
+  color: #211532;
+  font-size: 1.28rem;
+  letter-spacing: -0.028em;
+}
+
+.supportCard p {
+  margin: 0;
+  color: #5a4a64;
+  line-height: 1.66;
+}
+
+.trustBand {
+  width: min(1180px, calc(100% - 32px));
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.trustBandText,
+.trustChecklist {
+  border-radius: 34px;
+  padding: clamp(30px, 5vw, 54px);
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 20px 55px rgba(39, 21, 55, 0.075);
+}
+
+.trustBandText {
+  background:
+    radial-gradient(circle at top left, rgba(215, 169, 77, 0.20), transparent 16rem),
+    #ffffff;
+}
+
+.trustBandText h2 {
+  margin: 14px 0;
+  color: #171123;
+  font-size: clamp(2rem, 4vw, 3.45rem);
+  line-height: 1.02;
+  letter-spacing: -0.047em;
+  font-weight: 940;
+}
+
+.trustBandText p {
+  color: #5a4a64;
+  line-height: 1.7;
+}
+
+.trustChecklist {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(215, 169, 77, 0.28), transparent 16rem),
+    radial-gradient(circle at 85% 25%, rgba(110, 51, 178, 0.30), transparent 16rem),
+    linear-gradient(135deg, #2b173f, #6e33b2);
+  display: grid;
+  gap: 14px;
+}
+
+.trustChecklist div {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.trustChecklist strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.06rem;
+}
+
+.trustChecklist p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.58;
+}
+
+.footer {
+  border-top: 0;
+  background:
+    radial-gradient(circle at top left, rgba(215, 169, 77, 0.16), transparent 26rem),
+    radial-gradient(circle at top right, rgba(110, 51, 178, 0.26), transparent 28rem),
+    linear-gradient(180deg, #171123 0%, #0f0a17 100%);
+  color: #ffffff;
+  padding-top: 38px;
+}
+
+.footerCta {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 30px;
+  padding: clamp(26px, 5vw, 46px);
+  border-radius: 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footerCta h2 {
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.footerCta p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.68;
+}
+
+.footerDonateButton {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 999px;
+  color: #211532;
+  background: #f3d68c;
+  text-decoration: none;
+  font-weight: 950;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.20);
+}
+
+.footerGrid {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 26px 0 34px;
+  display: grid;
+  grid-template-columns: 1.45fr repeat(4, 1fr);
+  gap: 24px;
+}
+
+.footerBrandBlock,
+.footerColumn {
+  min-width: 0;
+}
+
+.footerLogo {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 14px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
+.footerBrandBlock strong,
+.footerColumn h3 {
+  display: block;
+  color: #ffffff;
+  font-size: 1.02rem;
+  margin-bottom: 12px;
+}
+
+.footerBrandBlock p,
+.footerColumn span,
+.footerBottom p {
+  color: rgba(255, 255, 255, 0.70);
+  line-height: 1.62;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footerColumn a {
+  color: rgba(255, 255, 255, 0.74);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.footerColumn a:hover {
+  color: #f3d68c;
+}
+
+.footerBottom {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 20px 0 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footerBottom p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 920px) {
+  .supportGrid,
+  .trustBand,
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .trustBand {
+    width: calc(100% - 22px);
+  }
+
+  .footerCta {
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% - 22px);
+  }
+
+  .footerDonateButton {
+    width: 100%;
+  }
+
+  .footerGrid,
+  .footerBottom {
+    width: calc(100% - 22px);
+    text-align: center;
+  }
+
+  .footerLogo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footerBottom {
+    justify-content: center;
+  }
+}
