@@ -30,7 +30,7 @@ export default function BlogPage() {
         <section className={styles.section}>
           <div className={styles.blogGrid}>
             {blogPosts.map((post) => (
-              <Link className={styles.blogCard} href={`/blog/${post.slug}`} key={post.slug}>
+              <Link className={styles.blogCard} href={`/blog/${post.slug}/`} key={post.slug}>
                 <div className={styles.imagePlaceholder}>{post.imageFile}</div>
                 <span className={styles.keyword}>{post.keyword}</span>
                 <h2>{post.title}</h2>
@@ -47,3 +47,4 @@ export default function BlogPage() {
     </div>
   );
 }
+
