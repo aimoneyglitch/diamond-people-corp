@@ -181,11 +181,7 @@
   border-radius: 34px;
   padding: 22px;
   min-height: 560px;
-  background:
-    linear-gradient(180deg, rgba(33, 18, 50, 0.05), rgba(33, 18, 50, 0.58)),
-    url("/hero-banner.jpg");
-  background-size: cover;
-  background-position: center;
+  background: #2b173f;
   box-shadow: 0 28px 70px rgba(35, 20, 47, 0.23);
   overflow: hidden;
 }
@@ -530,4 +526,20 @@
   .blogGrid {
     grid-template-columns: 1fr;
   }
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(33, 18, 50, 0.05), rgba(33, 18, 50, 0.62));
+  pointer-events: none;
+}
+
+.heroPanel img {
+  z-index: 0;
+}
+
+.heroPanel .panelCard {
+  z-index: 2;
 }

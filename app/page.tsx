@@ -36,16 +36,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className={styles.heroPanel}
-            aria-label="The Diamond People Corp supporting students and families"
-            style={{
-              backgroundImage:
-                'linear-gradient(180deg, rgba(33, 18, 50, 0.05), rgba(33, 18, 50, 0.58)), url("/hero-banner.jpg")',
-              backgroundSize: "cover",
-              backgroundPosition: "center"
-            }}
-          >
+          <div className={styles.heroPanel} aria-label="The Diamond People Corp supporting students and families">
+            <Image
+              src="/hero-banner.jpg"
+              alt="Tucson students and homeschool families supported by The Diamond People Corp"
+              fill
+              priority
+              sizes="(max-width: 920px) 100vw, 50vw"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center"
+              }}
+            />
+            <div className={styles.heroOverlay} />
             <div className={styles.panelCard}>
               <strong>Supporting Traveling Scholars. Investing in Futures.</strong>
               <p>
@@ -181,3 +184,4 @@ export default function Home() {
     </div>
   );
 }
+
