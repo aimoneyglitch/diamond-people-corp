@@ -1,13 +1,12 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./donor.module.css";
-import { DonationCta, SiteFooter, SiteHeader } from "./components/DpcShell";
-import { featuredPrograms } from "./lib/seoContent";
+import { SiteFooter, SiteHeader } from "./components/DpcShell";
 
 export const metadata: Metadata = {
-  title: "Donate to Support Homeschool Families in Tucson | The Diamond People Corp",
+  title: "The Diamond People Corp | Supporting Traveling Scholars in Tucson, Arizona",
   description:
-    "The Diamond People Corp receives donations, grants, sponsorships, and partnerships to support homeschool families, K-12 students, field trips, enrichment, learning supplies, youth sports, and scholarships in Tucson and Arizona.",
+    "The Diamond People Corp supports Traveling Scholars Foundation students and families through scholarships, educational field trips, homeschool enrichment, youth sports opportunities, learning supplies, and community partnerships.",
   alternates: {
     canonical: "https://thediamondpeoplecorp.org/"
   }
@@ -22,104 +21,146 @@ export default function Home() {
         <section className={styles.hero}>
           <div>
             <p className={styles.eyebrow}>Tucson, Arizona Nonprofit</p>
-            <h1>Donate to Support Homeschool Families in Tucson and Arizona</h1>
+            <h1>The Diamond People Corp</h1>
             <p className={styles.lead}>
-              The Diamond People Corp helps remove financial barriers for homeschool families and K-12
-              students by supporting scholarships, educational field trips, homeschool enrichment, youth
-              sports opportunities, learning supplies, and community-based educational experiences
-              connected to Traveling Scholars Foundation.
+              Supporting Traveling Scholars. Investing in Futures.
+            </p>
+            <p className={styles.lead}>
+              The Diamond People Corp supports students and families through scholarships,
+              educational field trips, homeschool enrichment, youth sports opportunities,
+              learning supplies, and community partnerships connected to Traveling Scholars Foundation.
             </p>
             <div className={styles.actions}>
-              <Link className={styles.primaryButton} href="/donate">Donate / Partner With Us</Link>
-              <Link className={styles.secondaryButton} href="/support-homeschool-families">How We Help Families</Link>
+              <Link className={styles.primaryButton} href="#mission">Our Mission</Link>
+              <Link className={styles.secondaryButton} href="#partners">Partner With Us</Link>
             </div>
           </div>
 
-          <div className={styles.heroPanel} aria-label="Students and families supported through education donations">
+          <div className={styles.heroPanel} aria-label="The Diamond People Corp supporting students and families">
             <div className={styles.panelCard}>
-              <strong>Support a student. Strengthen a family. Build the future.</strong>
+              <strong>Supporting Traveling Scholars. Investing in Futures.</strong>
               <p>
-                Donations help students access learning experiences that many families could not afford alone.
+                Helping students and families access educational opportunities, enrichment,
+                field trips, youth activities, and community-supported learning experiences.
               </p>
             </div>
           </div>
         </section>
 
-        <section className={styles.quickStats} aria-label="Donation impact areas">
-          <div className={styles.stat}><strong>01</strong><span>Homeschool enrichment and learning opportunities</span></div>
-          <div className={styles.stat}><strong>02</strong><span>Field trips, travel, youth sports, and student activities</span></div>
-          <div className={styles.stat}><strong>03</strong><span>Supplies, curriculum, tutoring, and academic support</span></div>
-          <div className={styles.stat}><strong>04</strong><span>Grants, sponsorships, partnerships, and scholarships</span></div>
+        <section className={styles.quickStats} aria-label="Our focus areas">
+          <div className={styles.stat}>
+            <strong>Education</strong>
+            <span>Empowering students with knowledge and learning opportunities.</span>
+          </div>
+          <div className={styles.stat}>
+            <strong>Opportunity</strong>
+            <span>Opening doors to new experiences and brighter futures.</span>
+          </div>
+          <div className={styles.stat}>
+            <strong>Empowerment</strong>
+            <span>Building confidence, leadership, and stronger communities.</span>
+          </div>
+          <div className={styles.stat}>
+            <strong>Impact</strong>
+            <span>Creating lasting change through support and partnership.</span>
+          </div>
         </section>
 
-        <section className={styles.section}>
+        <section className={styles.section} id="mission">
           <div className={styles.sectionHeader}>
-            <p className={styles.eyebrow}>Where Donations Go</p>
-            <h2>Helping Students Access Education, Enrichment, and Opportunity</h2>
+            <p className={styles.eyebrow}>Our Mission</p>
+            <h2>Educational Support for Students and Families</h2>
             <p>
-              Every student deserves access to meaningful learning experiences, not just the resources
-              their family can personally afford. The Diamond People Corp receives community support
-              to help create more opportunity for families and students.
+              Our mission is to remove financial barriers for students by supporting access to
+              educational field trips, homeschool enrichment, youth sports, student activities,
+              scholarships, learning supplies, and meaningful learning opportunities connected
+              to Traveling Scholars Foundation.
             </p>
           </div>
 
           <div className={styles.cardGrid}>
-            {featuredPrograms.map((program, index) => (
-              <article className={styles.card} key={program.title}>
-                <div className={styles.iconCircle}>{index + 1}</div>
-                <h3>{program.title}</h3>
-                <p>{program.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>1</div>
+              <h3>Scholarships and Family Support</h3>
+              <p>
+                Helping students and families access opportunities that may otherwise be out of reach.
+              </p>
+            </article>
 
-        <section className={styles.section}>
-          <div className={styles.split}>
-            <div className={styles.splitText}>
-              <p className={styles.eyebrow}>Why Support Is Needed</p>
-              <h2>Homeschool families still face real education costs.</h2>
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>2</div>
+              <h3>Educational Field Trips</h3>
               <p>
-                Homeschooling can give families flexibility, but it can also create financial pressure.
-                Curriculum, supplies, tutoring, field trips, enrichment programs, sports, and student
-                activities can add up quickly.
+                Supporting real-world learning through travel, field trips, cultural experiences,
+                and community-based education.
               </p>
-              <p>
-                For many families, the difference between a student participating or sitting out is
-                whether community support is available.
-              </p>
-            </div>
+            </article>
 
-            <div className={styles.splitPanel}>
-              <h3>Donors and partners can make a direct impact.</h3>
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>3</div>
+              <h3>Homeschool Enrichment</h3>
               <p>
-                The Diamond People Corp welcomes grants, sponsorships, donations, and community partnerships
-                from individuals, businesses, churches, foundations, and local organizations that want to
-                support students and families.
+                Helping homeschool families access enrichment activities, supplies, programs,
+                and student learning experiences.
               </p>
-              <ul>
-                <li>Fund field trips and educational travel.</li>
-                <li>Sponsor student opportunities and activities.</li>
-                <li>Help provide supplies, materials, and curriculum.</li>
-                <li>Support scholarship-style assistance for families.</li>
-              </ul>
-            </div>
+            </article>
+
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>4</div>
+              <h3>Youth Sports and Activities</h3>
+              <p>
+                Supporting confidence, teamwork, discipline, leadership, and student development.
+              </p>
+            </article>
+
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>5</div>
+              <h3>Learning Supplies</h3>
+              <p>
+                Helping provide materials, books, curriculum support, and educational resources.
+              </p>
+            </article>
+
+            <article className={styles.card}>
+              <div className={styles.iconCircle}>6</div>
+              <h3>Community Partnerships</h3>
+              <p>
+                Connecting donors, sponsors, grants, and community partners with student opportunity.
+              </p>
+            </article>
           </div>
         </section>
 
         <section className={styles.section} id="partners">
-          <div className={styles.sectionHeader}>
-            <p className={styles.eyebrow}>Grants and Partnerships</p>
-            <h2>Community Partnerships for K-12 Educational Enrichment</h2>
-            <p>
-              The Diamond People Corp welcomes grants, sponsorships, donations, and community partnerships
-              that support K-12 educational enrichment, homeschool student opportunities, educational
-              travel, field trips, youth sports, and student scholarships.
-            </p>
-          </div>
-          <div className={styles.actions}>
-            <Link className={styles.primaryButton} href="/donate">Become a Donor or Sponsor</Link>
-            <Link className={styles.secondaryButton} href="/blog">Read the Education Support Blog</Link>
+          <div className={styles.split}>
+            <div className={styles.splitText}>
+              <p className={styles.eyebrow}>Grants and Partnerships</p>
+              <h2>Community Partnerships for K-12 Educational Enrichment</h2>
+              <p>
+                The Diamond People Corp welcomes grants, sponsorships, donations, and community
+                partnerships that support K-12 educational enrichment, homeschool student opportunities,
+                educational travel, field trips, youth sports, and student scholarships.
+              </p>
+              <div className={styles.actions}>
+                <Link className={styles.primaryButton} href="/donate">Donation and Sponsorship Inquiries</Link>
+                <Link className={styles.secondaryButton} href="/blog">Read Our Blog</Link>
+              </div>
+            </div>
+
+            <div className={styles.splitPanel}>
+              <h3>Partner with a mission built around student opportunity.</h3>
+              <p>
+                Businesses, churches, foundations, donors, and community organizations can help
+                support students and families through educational programs, scholarships, supplies,
+                enrichment, and real-world learning experiences.
+              </p>
+              <ul>
+                <li>Support Traveling Scholars Foundation students and families.</li>
+                <li>Help fund educational field trips and enrichment opportunities.</li>
+                <li>Sponsor youth sports, student activities, and learning supplies.</li>
+                <li>Partner with a Tucson-based education support mission.</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -128,15 +169,17 @@ export default function Home() {
             <p className={styles.eyebrow}>Contact</p>
             <h2>Contact The Diamond People Corp</h2>
             <p>
-              Contact us for grant opportunities, sponsorships, donations, community partnerships, or
-              student support inquiries.
+              Contact us for grant opportunities, sponsorships, donations, or partnership inquiries.
             </p>
-            <p><strong>Email:</strong> <a href="mailto:info@thediamondpeoplecorp.org">info@thediamondpeoplecorp.org</a></p>
-            <p><strong>Location:</strong> Tucson, Arizona</p>
+            <p>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:info@thediamondpeoplecorp.org">info@thediamondpeoplecorp.org</a>
+            </p>
+            <p>
+              <strong>Location:</strong> Tucson, Arizona
+            </p>
           </div>
         </section>
-
-        <DonationCta />
       </main>
 
       <SiteFooter />
