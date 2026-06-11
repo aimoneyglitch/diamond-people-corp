@@ -2214,3 +2214,408 @@
     flex: 0 0 auto;
   }
 }
+
+/* EXECUTIVE HOMEPAGE HERO — PREMIUM FIRST IMPRESSION */
+.executiveHero {
+  width: min(1240px, calc(100% - 32px));
+  margin: 28px auto 22px;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: clamp(22px, 3vw, 38px);
+  align-items: stretch;
+  padding: clamp(24px, 4vw, 46px);
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(243, 214, 140, 0.24), transparent 18rem),
+    radial-gradient(circle at 82% 12%, rgba(126, 56, 183, 0.26), transparent 22rem),
+    linear-gradient(135deg, #170f22 0%, #2a173e 52%, #120b1c 100%);
+  border: 1px solid rgba(243, 214, 140, 0.24);
+  box-shadow:
+    0 28px 90px rgba(39, 21, 55, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  position: relative;
+}
+
+.executiveHero::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  pointer-events: none;
+}
+
+.executiveHeroCopy,
+.executiveHeroVisual {
+  position: relative;
+  z-index: 1;
+}
+
+.executiveHeroCopy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(10px, 2vw, 22px);
+}
+
+.executiveKicker {
+  width: fit-content;
+  margin: 0 0 18px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #f3d68c;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(243, 214, 140, 0.24);
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+.executiveHeroCopy h1 {
+  margin: 0;
+  max-width: 720px;
+  color: #ffffff;
+  font-size: clamp(3.1rem, 6.2vw, 6.25rem);
+  line-height: 0.91;
+  letter-spacing: -0.075em;
+  font-weight: 950;
+  text-wrap: balance;
+}
+
+.executiveLead {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+  line-height: 1.72;
+}
+
+.executiveHeroActions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.executivePrimaryButton,
+.executiveSecondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-weight: 950;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.executivePrimaryButton {
+  color: #211532;
+  background: linear-gradient(135deg, #f8e4a6 0%, #d7a94d 100%);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.26);
+}
+
+.executiveSecondaryButton {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.executivePrimaryButton:hover,
+.executiveSecondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.executiveMiniProof {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.executiveMiniProof span {
+  color: rgba(255, 255, 255, 0.80);
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.executiveHeroVisual {
+  min-height: 540px;
+  border-radius: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(243, 214, 140, 0.22);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  background: #211532;
+}
+
+.executiveHeroImage {
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.executiveHeroVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(23, 15, 34, 0.34), transparent 45%),
+    linear-gradient(0deg, rgba(23, 15, 34, 0.25), transparent 52%);
+  pointer-events: none;
+}
+
+.executiveHeroGlass {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  z-index: 2;
+  padding: 16px 18px;
+  border-radius: 22px;
+  color: #ffffff;
+  background: rgba(23, 15, 34, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.executiveHeroGlass span,
+.executiveHeroGlass strong {
+  display: block;
+}
+
+.executiveHeroGlass span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.executiveHeroGlass strong {
+  margin-top: 4px;
+  font-size: 1.12rem;
+  letter-spacing: -0.02em;
+}
+
+.executiveTrustStrip {
+  width: min(1240px, calc(100% - 32px));
+  margin: 0 auto 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.executiveTrustStrip article {
+  padding: 22px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(215, 169, 77, 0.14), transparent 12rem),
+    #ffffff;
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 18px 46px rgba(39, 21, 55, 0.07);
+}
+
+.trustMark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6e33b2, #d7a94d);
+  font-size: 0.9rem;
+  font-weight: 950;
+}
+
+.executiveTrustStrip strong {
+  display: block;
+  color: #211532;
+  font-size: 1.05rem;
+  letter-spacing: -0.025em;
+  margin-bottom: 7px;
+}
+
+.executiveTrustStrip p {
+  margin: 0;
+  color: #5a4a64;
+  line-height: 1.55;
+  font-size: 0.94rem;
+}
+
+.executiveSupportAreas {
+  width: min(1180px, calc(100% - 32px));
+  margin: 34px auto;
+  padding: clamp(30px, 5vw, 62px);
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at 20% 8%, rgba(215, 169, 77, 0.18), transparent 17rem),
+    linear-gradient(180deg, #ffffff 0%, #fbf8ff 100%);
+  border: 1px solid rgba(89, 57, 126, 0.12);
+  box-shadow: 0 24px 70px rgba(39, 21, 55, 0.075);
+}
+
+.executiveSectionHeader {
+  max-width: 820px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.executiveSectionHeader h2 {
+  margin: 14px 0;
+  color: #171123;
+  font-size: clamp(2.1rem, 5vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 950;
+}
+
+.executiveSectionHeader p {
+  color: #5a4a64;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.executiveAreaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.executiveAreaGrid article {
+  padding: 26px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(89, 57, 126, 0.10);
+  box-shadow: 0 16px 44px rgba(39, 21, 55, 0.055);
+}
+
+.executiveAreaGrid span {
+  color: #6e33b2;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+
+.executiveAreaGrid h3 {
+  color: #211532;
+  margin: 12px 0 8px;
+  font-size: 1.22rem;
+  letter-spacing: -0.03em;
+}
+
+.executiveAreaGrid p {
+  margin: 0;
+  color: #5a4a64;
+  line-height: 1.62;
+}
+
+.navDonate {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #7b39c6, #5b2395) !important;
+  box-shadow: 0 14px 32px rgba(110, 51, 178, 0.30) !important;
+}
+
+@media (max-width: 1020px) {
+  .executiveHero {
+    grid-template-columns: 1fr;
+  }
+
+  .executiveHeroVisual {
+    min-height: 420px;
+  }
+
+  .executiveTrustStrip,
+  .executiveAreaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .executiveHero,
+  .executiveTrustStrip,
+  .executiveSupportAreas {
+    width: calc(100% - 22px);
+  }
+
+  .executiveHero {
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .executiveHero::before {
+    inset: 10px;
+    border-radius: 22px;
+  }
+
+  .executiveHeroCopy {
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 0;
+  }
+
+  .executiveKicker {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .executiveHeroCopy h1 {
+    font-size: clamp(2.55rem, 13vw, 4.15rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+  }
+
+  .executiveLead {
+    font-size: 1rem;
+  }
+
+  .executiveHeroActions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .executivePrimaryButton,
+  .executiveSecondaryButton {
+    width: 100%;
+  }
+
+  .executiveMiniProof {
+    justify-content: center;
+  }
+
+  .executiveHeroVisual {
+    min-height: 260px;
+    border-radius: 22px;
+  }
+
+  .executiveHeroGlass {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    text-align: center;
+  }
+
+  .executiveTrustStrip,
+  .executiveAreaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .executiveTrustStrip article,
+  .executiveAreaGrid article {
+    text-align: center;
+  }
+
+  .executiveSupportAreas {
+    padding: 28px 18px;
+    border-radius: 26px;
+  }
+}

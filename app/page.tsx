@@ -7,7 +7,7 @@ import { HomepageImpactSection, SiteFooter, SiteHeader } from "./components/DpcS
 export const metadata: Metadata = {
   title: "Tucson Education Nonprofit | The Diamond People Corp",
   description:
-    "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+    "Tucson education nonprofit supporting Traveling Scholars families through student enrichment, field experiences, learning access, and community partnership.",
   keywords: [
     "Tucson education nonprofit",
     "Traveling Scholars Foundation",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "The Diamond People Corp",
     title: "Tucson Education Nonprofit | The Diamond People Corp",
     description:
-      "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+      "Tucson education nonprofit supporting Traveling Scholars families through student enrichment, field experiences, learning access, and community partnership.",
     images: [
       {
         url: "/og-diamond-people-corp.jpg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tucson Education Nonprofit | The Diamond People Corp",
     description:
-      "Tucson nonprofit supporting Traveling Scholars families with homeschool enrichment, field trips, learning supplies, youth sports, and student opportunity.",
+      "Tucson education nonprofit supporting Traveling Scholars families through student enrichment, field experiences, learning access, and community partnership.",
     images: ["/og-diamond-people-corp.jpg"]
   },
   robots: {
@@ -48,25 +48,66 @@ export const metadata: Metadata = {
   }
 };
 
-function HomeImpactStrip() {
+function ExecutiveTrustStrip() {
   return (
-    <section className={styles.homeImpactStrip} aria-label="Impact focus areas">
-      <div className={styles.homeImpactItem}>
-        <span>01</span>
-        <strong>Educational Access</strong>
-        <p>Helping families say yes to meaningful learning opportunities.</p>
+    <section className={styles.executiveTrustStrip} aria-label="Mission trust points">
+      <article>
+        <span className={styles.trustMark}>◆</span>
+        <strong>Student-Centered</strong>
+        <p>Support is focused on educational access, confidence, and student opportunity.</p>
+      </article>
+
+      <article>
+        <span className={styles.trustMark}>◇</span>
+        <strong>Tucson, Arizona</strong>
+        <p>Locally grounded education support connected to Traveling Scholars Foundation families.</p>
+      </article>
+
+      <article>
+        <span className={styles.trustMark}>●</span>
+        <strong>Clear Support Path</strong>
+        <p>Built for donors, sponsors, businesses, churches, foundations, and partners.</p>
+      </article>
+
+      <article>
+        <span className={styles.trustMark}>✦</span>
+        <strong>Meaningful Access</strong>
+        <p>Helping students participate in enrichment, resources, and real-world learning.</p>
+      </article>
+    </section>
+  );
+}
+
+function ExecutiveSupportAreas() {
+  return (
+    <section className={styles.executiveSupportAreas}>
+      <div className={styles.executiveSectionHeader}>
+        <p className={styles.eyebrow}>Support Focus</p>
+        <h2>Generosity becomes access, resources, and experience.</h2>
+        <p>
+          The Diamond People Corp connects community support with practical needs that help
+          students and families continue building strong education paths.
+        </p>
       </div>
 
-      <div className={styles.homeImpactItem}>
-        <span>02</span>
-        <strong>Student Enrichment</strong>
-        <p>Supporting experiences that build confidence beyond the basics.</p>
-      </div>
+      <div className={styles.executiveAreaGrid}>
+        <article>
+          <span>01</span>
+          <h3>Learning Resources</h3>
+          <p>Books, supplies, project materials, and tools that help students stay engaged.</p>
+        </article>
 
-      <div className={styles.homeImpactItem}>
-        <span>03</span>
-        <strong>Community Partnership</strong>
-        <p>Connecting donors and partners with real student opportunity.</p>
+        <article>
+          <span>02</span>
+          <h3>Field Experiences</h3>
+          <p>Real-world learning connected to science, culture, history, nature, and community.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Student Enrichment</h3>
+          <p>Activities, tutoring, workshops, and programs that build confidence and direction.</p>
+        </article>
       </div>
     </section>
   );
@@ -78,34 +119,53 @@ export default function Home() {
       <SiteHeader />
 
       <main>
-        <section className={styles.homeHeroStack}>
-          <div className={`${styles.homeHeroPhotoFrame} ${styles.heroBannerOnly}`}>
-            <Image
-              className={styles.homeHeroPhoto}
-              src="/hero-banner.jpg"
-              alt="The Diamond People Corp Tucson desert banner supporting Traveling Scholars"
-              fill
-              priority
-              sizes="100vw"
-            />
+        <section className={styles.executiveHero}>
+          <div className={styles.executiveHeroCopy}>
+            <p className={styles.executiveKicker}>Tucson, Arizona Education Support</p>
+            <h1>Opening Educational Doors for Students and Families</h1>
+            <p className={styles.executiveLead}>
+              The Diamond People Corp supports Traveling Scholars Foundation families by helping
+              connect donor generosity with learning resources, student enrichment, field experiences,
+              and meaningful educational access.
+            </p>
+
+            <div className={styles.executiveHeroActions}>
+              <Link className={styles.executivePrimaryButton} href="/donate">
+                Support the Mission
+              </Link>
+              <Link className={styles.executiveSecondaryButton} href="/student-enrichment-fund">
+                View Impact Areas
+              </Link>
+            </div>
+
+            <div className={styles.executiveMiniProof}>
+              <span>Education</span>
+              <span>Opportunity</span>
+              <span>Empowerment</span>
+              <span>Impact</span>
+            </div>
           </div>
 
-          <div className={`${styles.homeHeroMissionCard} ${styles.homeHeroIntroCard}`}>
-            <p className={styles.eyebrow}>Tucson, Arizona Education Support</p>
-            <h1>Helping Students Access Meaningful Educational Opportunity</h1>
-            <p className={styles.lead}>
-              The Diamond People Corp supports Traveling Scholars Foundation families by helping remove
-              barriers to meaningful learning experiences, enrichment opportunities, field experiences,
-              supplies, and student growth.
-            </p>
-            <div className={styles.actions}>
-              <Link className={styles.primaryButton} href="/donate">Support Students</Link>
-              <Link className={styles.secondaryButton} href="/blog/where-education-donations-go/">See Where Support Goes</Link>
+          <div className={styles.executiveHeroVisual}>
+            <Image
+              className={styles.executiveHeroImage}
+              src="/hero-banner.jpg"
+              alt="The Diamond People Corp Tucson desert education support banner"
+              fill
+              priority
+              sizes="(max-width: 920px) 100vw, 50vw"
+            />
+
+            <div className={styles.executiveHeroGlass}>
+              <span>Supporting Traveling Scholars</span>
+              <strong>Investing in Futures</strong>
             </div>
           </div>
         </section>
 
-        <HomeImpactStrip />
+        <ExecutiveTrustStrip />
+
+        <ExecutiveSupportAreas />
 
         <HomepageImpactSection />
 
@@ -146,11 +206,11 @@ export default function Home() {
               <p className={styles.eyebrow}>Partners</p>
               <h2>Built for donors, sponsors, churches, businesses, foundations, and community partners.</h2>
               <p>
-                Serious support starts with a clear mission. The Diamond People Corp is preparing a clean
-                support path for donors and partners who want to help students access meaningful educational opportunity.
+                Serious support starts with a clear mission. The Diamond People Corp is creating a
+                student-centered path for supporters who want their generosity tied to real educational access.
               </p>
               <div className={styles.actions}>
-                <Link className={styles.primaryButton} href="/donation-inquiries">Start a Giving Inquiry</Link>
+                <Link className={styles.primaryButton} href="/donation-inquiries">Start a Support Inquiry</Link>
                 <Link className={styles.secondaryButton} href="/student-enrichment-fund">View Programs</Link>
               </div>
             </div>
@@ -172,7 +232,7 @@ export default function Home() {
             <p className={styles.eyebrow}>Contact</p>
             <h2>Begin a serious support conversation.</h2>
             <p>
-              For giving, sponsorship, grant, or partnership questions, contact The Diamond People Corp directly.
+              For giving, sponsorship, or partnership questions, contact The Diamond People Corp directly.
             </p>
             <div className={styles.actions}>
               <Link className={styles.primaryButton} href="mailto:info@thediamondpeoplecorp.org">
