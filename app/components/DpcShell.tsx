@@ -22,6 +22,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className={styles.nav} aria-label="Main navigation">
+          <Link href="/">Home</Link>
           <Link href="/donate">Donate</Link>
           <Link href="/support-homeschool-families">Families</Link>
           <Link href="/student-enrichment-fund">Programs</Link>
@@ -41,7 +42,7 @@ export function SiteFooter() {
       <div className={styles.footerInner}>
         <div>
           <strong>The Diamond People Corp</strong>
-          <p>Receiving support for homeschool families, K-12 enrichment, scholarships, field trips, youth sports, and learning opportunities connected to Traveling Scholars Foundation.</p>
+          <p>Supporting Traveling Scholars Foundation students and families through scholarships, field trips, homeschool enrichment, youth sports, learning supplies, and community partnerships.</p>
         </div>
         <div>
           <Link href="mailto:info@thediamondpeoplecorp.org">info@thediamondpeoplecorp.org</Link>

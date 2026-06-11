@@ -36,7 +36,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.heroPanel} aria-label="The Diamond People Corp supporting students and families">
+          <div
+            className={styles.heroPanel}
+            aria-label="The Diamond People Corp supporting students and families"
+            style={{
+              backgroundImage:
+                'linear-gradient(180deg, rgba(33, 18, 50, 0.05), rgba(33, 18, 50, 0.58)), url("/hero-banner.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
             <div className={styles.panelCard}>
               <strong>Supporting Traveling Scholars. Investing in Futures.</strong>
               <p>
@@ -82,51 +91,37 @@ export default function Home() {
             <article className={styles.card}>
               <div className={styles.iconCircle}>1</div>
               <h3>Scholarships and Family Support</h3>
-              <p>
-                Helping students and families access opportunities that may otherwise be out of reach.
-              </p>
+              <p>Helping students and families access opportunities that may otherwise be out of reach.</p>
             </article>
 
             <article className={styles.card}>
               <div className={styles.iconCircle}>2</div>
               <h3>Educational Field Trips</h3>
-              <p>
-                Supporting real-world learning through travel, field trips, cultural experiences,
-                and community-based education.
-              </p>
+              <p>Supporting real-world learning through travel, field trips, cultural experiences, and community-based education.</p>
             </article>
 
             <article className={styles.card}>
               <div className={styles.iconCircle}>3</div>
               <h3>Homeschool Enrichment</h3>
-              <p>
-                Helping homeschool families access enrichment activities, supplies, programs,
-                and student learning experiences.
-              </p>
+              <p>Helping homeschool families access enrichment activities, supplies, programs, and student learning experiences.</p>
             </article>
 
             <article className={styles.card}>
               <div className={styles.iconCircle}>4</div>
               <h3>Youth Sports and Activities</h3>
-              <p>
-                Supporting confidence, teamwork, discipline, leadership, and student development.
-              </p>
+              <p>Supporting confidence, teamwork, discipline, leadership, and student development.</p>
             </article>
 
             <article className={styles.card}>
               <div className={styles.iconCircle}>5</div>
               <h3>Learning Supplies</h3>
-              <p>
-                Helping provide materials, books, curriculum support, and educational resources.
-              </p>
+              <p>Helping provide materials, books, curriculum support, and educational resources.</p>
             </article>
 
             <article className={styles.card}>
               <div className={styles.iconCircle}>6</div>
               <h3>Community Partnerships</h3>
-              <p>
-                Connecting donors, sponsors, grants, and community partners with student opportunity.
-              </p>
+              <p>Connecting donors, sponsors, grants, and community partners with student opportunity.</p>
             </article>
           </div>
         </section>
