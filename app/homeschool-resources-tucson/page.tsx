@@ -6,7 +6,7 @@ import styles from "./homeschoolHub.module.css";
 
 const pageUrl = "https://thediamondpeoplecorp.org/homeschool-resources-tucson/";
 
-const heroImage = "/site-images/tucson-az-homeschool-family-learning-support-diamond-people-corp-hero.jpg";
+const heroImage = "/site-images/tucson-az-educational-supplies-donation-impact.png";
 
 export const metadata: Metadata = {
   title: "Tucson Homeschool Resources | ESA, Field Trips, Groups & Support",
@@ -62,8 +62,7 @@ const resourceSections = [
     title: "Arizona ESA homeschool support",
     text:
       "Arizona ESA can help families access education options, but families may still need help finding enrichment, supplies, activities, field experiences, and practical support.",
-    image: "/site-images/tucson-az-educational-supplies-donation-impact.png",
-    alt: "Parent reviewing homeschool learning materials and educational planning resources",
+    image: "/site-images/tucson-az-nonprofit-donor-support-meeting.png", alt: "Parent reviewing homeschool learning materials and educational planning resources",
     links: [
       { href: "/blog/arizona-esa-homeschool-support/", label: "Read the Arizona ESA guide" },
       { href: "/support-homeschool-families/", label: "Support homeschool families" }
@@ -101,8 +100,7 @@ const resourceSections = [
     title: "Homeschool supplies and curriculum support",
     text:
       "Books, curriculum materials, notebooks, STEM supplies, art materials, backpacks, and project tools can make a direct difference for families building strong education paths.",
-    image: "/site-images/tucson-az-nonprofit-donor-support-meeting.png",
-    alt: "Homeschool supplies curriculum materials and donor support planning resources",
+    image: "/site-images/tucson-az-homeschool-family-learning-support-diamond-people-corp-hero.jpg", alt: "Homeschool family learning support with education materials and Diamond People Corp branding",
     links: [
       { href: "/donate/", label: "Donate to education support" },
       { href: "/donation-inquiries/", label: "Start a support inquiry" }
@@ -402,3 +400,4 @@ export default function HomeschoolResourcesTucsonPage() {
     </div>
   );
 }
+

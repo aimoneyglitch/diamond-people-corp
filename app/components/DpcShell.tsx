@@ -26,6 +26,7 @@ export function SiteHeader() {
           <Link href="/donate">Donate</Link>
           <Link href="/support-homeschool-families">Families</Link>
           <Link href="/student-enrichment-fund">Programs</Link>
+          <Link href="/homeschool-resources-tucson/">Resources</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/#contact">Contact</Link>
           <Link className={styles.navDonate} href="/donate">Give</Link>
@@ -206,6 +207,7 @@ export function SiteFooter() {
 
         <div className={styles.footerColumn}>
           <h3>Resources</h3>
+          <Link href="/homeschool-resources-tucson/">Resources</Link>
           <Link href="/blog/">Blog</Link>
           <Link href="/blog/support-homeschool-families-tucson/">Homeschool Support</Link>
           <Link href="/blog/arizona-esa-homeschool-support/">Arizona ESA</Link>
@@ -233,3 +235,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+

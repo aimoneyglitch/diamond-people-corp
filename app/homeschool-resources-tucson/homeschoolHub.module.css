@@ -31,7 +31,7 @@
 
 .heroImage {
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
 }
 
 .heroCopy {
@@ -463,5 +463,17 @@
   .finalCta {
     padding: 24px 18px;
     border-radius: 24px;
+  }
+}
+
+/* HERO CROP FIX */
+.heroImageWrap {
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 680px) {
+  .heroImageWrap {
+    aspect-ratio: 16 / 11;
+    min-height: auto;
   }
 }
