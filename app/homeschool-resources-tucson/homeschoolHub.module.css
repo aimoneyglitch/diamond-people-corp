@@ -477,3 +477,71 @@
     min-height: auto;
   }
 }
+
+/* HARD FIX: HOMESCHOOL HUB HERO CONTAINMENT */
+.hero {
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr) !important;
+  overflow: hidden !important;
+}
+
+.hero > * {
+  min-width: 0 !important;
+}
+
+.heroImageWrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 430px !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.heroCopy {
+  min-width: 0 !important;
+  max-width: 620px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.hero h1 {
+  font-size: clamp(2.55rem, 4.8vw, 4.9rem) !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.058em !important;
+}
+
+.hero p {
+  max-width: 560px !important;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .heroImageWrap {
+    order: -1 !important;
+    min-height: 360px !important;
+    aspect-ratio: 16 / 10 !important;
+  }
+
+  .heroCopy {
+    max-width: none !important;
+    text-align: center !important;
+  }
+
+  .hero p {
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .heroImageWrap {
+    min-height: auto !important;
+    aspect-ratio: 16 / 11 !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.05rem, 9.5vw, 3rem) !important;
+    line-height: 1 !important;
+  }
+}
